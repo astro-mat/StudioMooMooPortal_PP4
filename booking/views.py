@@ -1,9 +1,13 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
+from django.views import generic
+from .models import Booking
 #from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return render(request, "home.html")
+    return render(request, "index.html")
 
-def home(request):
+def booking(request):
     return render(request, "booking.html")
+
+

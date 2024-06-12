@@ -16,9 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+from django.template import loader
 
+def homepage_view(request):
+    """
+    Render the index page
+    """
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render({}, request))
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("booking.urls"))
+    path("", include("booking.urls"), name='booking-urls')
 ]

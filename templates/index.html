@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %} Studio Moo Moo {% endblock %}
+{% block content %}
+<!-- Hero image with welcome text -->
+<div class="row hero-img mt-2 mb-lg-4">
+    <div class="col-md-6 my-5 mx-auto">
+        <div class="w-100 px-5 py-4 members rounded">
+            <h3>Boutique Recording facility in the northwest of ireland</h3>
+            <p>
+                Welcome to Studio Moo Moo, an idyllic recording haven in rural north-west Ireland, just a short drive from Dublin and Knock international Airport. This 16-track studio, a labour of love by creator Mat Warren, offers a retreat for intimate songwriting and recording. Its one-room design seamlessly integrates live tracking with fostering a fluid creative process. Meticulous attention to lighting, decor, and top-notch acoustic design creates a cozy and inspiring atmosphere. Whether you're a solo artist or a group, Studio Moo Moo provides the perfect backdrop for your musical journey in the serene landscapes of rural Ireland.
+            </p>
+            <a href="{% url 'booking' %}" class="btn btn-light btn-lg">Click to make booking</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
