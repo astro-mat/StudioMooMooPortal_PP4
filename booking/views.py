@@ -17,6 +17,9 @@ class BookingList(generic.ListView):
     queryset = Booking.objects.all()
     template_name = "booking_list.html"
 
+# class BookingList(generic.ListView):
+#     model = Booking
+
 
 
 

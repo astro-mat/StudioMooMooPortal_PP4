@@ -1,21 +1,17 @@
 {% extends "base.html" %} {% block title %} Studio Moo Moo {% endblock %}
 {% block content %}
 
-<div class="row hero-img mt-2 mb-lg-4">
-    <div class="col-md-6 my-5 mx-auto">
-        <div class="w-100 px-5 py-4 members rounded">
-            <h1>MY BOOKINGS</h1>
-            <p>
-                These are your bookings
-            </p>
-            <a href="{% url 'booking' %}" class="btn btn-light btn-lg">Click to do something</a>
-        </div>
-    </div>
-    <div class="row col-10 justify-content-center mx-auto">
+<body>
+    <h1>Booking list for {{Booking.user}}</h1>
+    {% for Booking in object_list %}
+    <p>Artist Name {{Booking.Artist_Name}}</p>
+    <p>Start Time: {{Booking.start_time}}</p>
+    <p>End Time: {{Booking.end_time}}</p>
+    <p>Requirements: {{Booking.BookingRequirements}}</p>
+    {% endfor %}
+</body>
 
-
-    </div>
-</div>
+</html>
 
 
 
