@@ -31,7 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-astromat-studiomoomoopo-cn6srdvwxks.ws-eu114.gitpod.io',
-    '.herokuapp.com'
+    '.herokuapp.com',
+    '8000-astromat-studiomoomoopo-98wi95ztyvt.ws-eu114.gitpod.io'
 ]
 
 

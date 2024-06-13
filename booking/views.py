@@ -10,6 +10,13 @@ def home(request):
 def booking(request):
     return render(request, "booking/booking.html")
 
+def my_bookings(request):
+    return render(request, "booking/my_bookings.html")
+
+class BookingList(generic.ListView):
+    queryset = Booking.objects.all()
+    template_name = "booking_list.html"
+
 
 
 
