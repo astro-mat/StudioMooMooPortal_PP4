@@ -2,13 +2,29 @@
 {% block content %}
 
 <body>
-    <h1>Booking list for {{Booking.user}}</h1>
-    {% for Booking in object_list %}
-    <p>Artist Name {{Booking.Artist_Name}}</p>
-    <p>Start Time: {{Booking.start_time}}</p>
-    <p>End Time: {{Booking.end_time}}</p>
-    <p>Requirements: {{Booking.BookingRequirements}}</p>
-    {% endfor %}
+    <div>
+        <h1>Make a new Booking</h1>
+        <!-- temp spacing -->
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+    </div>
+
+    <div>
+        <h1>Booking list for {{Booking.Artist_Name}}</h1>
+        {% for Booking in object_list %}
+        <p>Artist Name: {{Booking.Artist_Name}}</p>
+        <p>Start Time: {{Booking.start_time}}</p>
+        <p>End Time: {{Booking.end_time}}</p>
+        <p>Requirements: {{Booking.BookingRequirements}}</p>
+        {% endfor %}
+    </div>
 </body>
 
 </html>

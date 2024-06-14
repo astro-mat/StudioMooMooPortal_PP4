@@ -47,9 +47,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'booking' %}">Booking <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Client Portal</a>
-        </li>
         {% if user.is_authenticated %}
         <li class="nav-item">
           <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
@@ -57,12 +54,8 @@
         </li>
         {% else %}
         <li class="nav-item">
-          <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-            href="{% url 'account_signup' %}">Register</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page"
-            href="{% url 'account_login' %}">Login</a>
+            href="{% url 'account_login' %}">Client Portal</a>
         </li>
         {% endif %}
       </ul>
