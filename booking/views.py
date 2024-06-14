@@ -14,7 +14,7 @@ def my_bookings(request):
     return render(request, "booking/my_bookings.html")
 
 class BookingList(generic.ListView):
-    queryset = Booking.objects.all()
+    queryset = Booking.objects.filter(user=2)
     template_name = "booking_list.html"
 
 # class BookingList(generic.ListView):
