@@ -11,14 +11,13 @@ def booking(request):
     return render(request, "booking/booking.html")
 
 def my_bookings(request):
-    return render(request, "booking/my_bookings.html")
-
-class BookingList(generic.ListView):
-    queryset = Booking.objects.filter(user=2)
-    template_name = "booking_list.html"
+    bookings = Booking.objects.filter(user=request.user).select_related('Artist_Name').order_by('start_time')
+    
+    return render(request, "booking/booking_list.html")
 
 # class BookingList(generic.ListView):
-#     model = Booking
+#     queryset = Booking.objects.filter()
+#     template_name = "booking_list.html"
 
 
 
