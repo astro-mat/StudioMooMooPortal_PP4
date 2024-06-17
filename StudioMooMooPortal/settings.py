@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-astromat-studiomoomoopo-cn6srdvwxks.ws-eu114.gitpod.io',
     '.herokuapp.com',
-    '8000-astromat-studiomoomoopo-98wi95ztyvt.ws-eu114.gitpod.io'
+    '8000-astromat-studiomoomoopo-tng9e15sj4n.ws.codeinstitute-ide.net',
 ]
 
 
@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'booking',
     'django_summernote',
+    'booking',
 ]
 
 SITE_ID = 1
@@ -109,8 +109,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io/",
-    "https://*.herokuapp.com"
-    "https://*.codeinstitute-ide.net/"
+    "https://*.herokuapp.com",
+    "https://*.codeinstitute-ide.net/",
 ]
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -129,7 +129,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
