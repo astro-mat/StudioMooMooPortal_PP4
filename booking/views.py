@@ -14,16 +14,11 @@ def booking(request):
 def my_bookings(request):
     bookings = Booking.objects.filter(user=request.user)
     
-    return render(request, "booking/booking_list.html",
-    {
-        'Booking': Booking
-    }
-    
-    )
+    return render(request, "booking/booking_list.html",{'bookings':bookings},)
 
-# class BookingList(generic.ListView):
-#     queryset = Booking.objects.filter()
-#     template_name = "booking_list.html"
+
+
+
 
 
 

@@ -24,7 +24,7 @@
 
     <div>
         <h1>Booking list for {{ user }}</h1>
-        {% for Booking in object_list %}
+        {% for bookings in bookings %}
         <p>Artist Name: {{ bookings.Artist_Name }}</p>
         <p>Start Time: {{ bookings.start_time }}</p>
         <p>End Time: {{ bookings.end_time }}</p>
