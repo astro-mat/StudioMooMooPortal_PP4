@@ -23,12 +23,12 @@
     </div>
 
     <div>
-        <h1>Booking list for {{Booking.Artist_Name}}</h1>
+        <h1>Booking list for {{ user }}</h1>
         {% for Booking in object_list %}
-        <p>Artist Name: {{Booking.Artist_Name}}</p>
-        <p>Start Time: {{Booking.start_time}}</p>
-        <p>End Time: {{Booking.end_time}}</p>
-        <p>Requirements: {{Booking.BookingRequirements}}</p>
+        <p>Artist Name: {{ bookings.Artist_Name }}</p>
+        <p>Start Time: {{ bookings.start_time }}</p>
+        <p>End Time: {{ bookings.end_time }}</p>
+        <p>Requirements: {{ bookings.BookingRequirements }}</p>
         {% endfor %}
     </div>
 </body>
