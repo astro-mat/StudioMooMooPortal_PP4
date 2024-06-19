@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import *
-# from .models import Booking
+from .forms import *
 
 
 # Create your views here.
@@ -14,7 +14,13 @@ def booking(request):
 def my_bookings(request):
     bookings = Booking.objects.filter(user=request.user)
     
-    return render(request, "booking/booking_list.html",{'bookings':bookings},)
+    return render(
+        request, 
+        "booking/booking_list.html",
+        {
+            'bookings':bookings
+        },
+    )
 
 
 

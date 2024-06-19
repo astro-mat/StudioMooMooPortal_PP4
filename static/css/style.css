@@ -65,3 +65,9 @@ hr {
     background-color: white;
     color: #000000;    
 }
+
+.table {
+    font-family: 'roboto', 'Lucida Sans';
+    font-size: 20px;
+    color: #fafafa;
+}

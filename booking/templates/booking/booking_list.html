@@ -24,13 +24,33 @@
 
     <div>
         <h1>Booking list for {{ user }}</h1>
-        {% for bookings in bookings %}
-        <p>Artist Name: {{ bookings.Artist_Name }}</p>
-        <p>Start Time: {{ bookings.start_time }}</p>
-        <p>End Time: {{ bookings.end_time }}</p>
-        <p>Requirements: {{ bookings.BookingRequirements }}</p>
-        {% endfor %}
     </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Artist Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Start Time</th>
+            <th scope="col">End Time</th>
+            <th scope="col">Requirements</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        {% for bookings in bookings %}
+        <tbody>
+          <tr>
+            <th scope="row">{{ bookings.Artist_Name }}</th>
+            <td>{{ bookings.date }}</td>
+            <td>{{ bookings.start_time }}</td>
+            <td>{{ bookings.end_time }}</td>
+            <td>{{ bookings.BookingRequirements }}</td>
+            <td><button type="button" class="btn btn-light">Edit</button></td>
+            <td><button type="button" class="btn btn-light">Delete</button></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
 </body>
 
 </html>
