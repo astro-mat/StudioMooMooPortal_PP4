@@ -49,13 +49,13 @@
             <td>{{ bookings.end_time }}</td>
             <td>{{ bookings.BookingRequirements }}</td>
             <td><button type="button" class="btn btn-light">Edit</button></td>
-            <td><button type="button" class="btn btn-light" booking_id="{{ booking.id }}">Delete</button></td>
+            <td><button type="button" class="btn btn-light btn-delete" booking_id="{{ booking.id }}">Delete</button></td>
           </tr>
         {% endfor %}
         </tbody>
       </table>
     </div>
-    <!-- Delete confirmation modal -->
+    <!-- Delete confirmation modal
     <div class="modal fade" id="deleteModal" tabindex="-1"
       aria-labelledby="deleteModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
