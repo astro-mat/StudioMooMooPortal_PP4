@@ -48,7 +48,10 @@
             <td>{{ bookings.start_time }}</td>
             <td>{{ bookings.end_time }}</td>
             <td>{{ bookings.BookingRequirements }}</td>
-            <td><button type="button" class="btn btn-light">Edit</button></td>
+
+            <td>{% if user.is_authenticated %}
+              <button class="btn btn-light btn-edit" comment_id="{{ booking.id }}">Edit</button>
+              {% endif %}</td>
             <td><button type="button" class="btn btn-light btn-delete" booking_id="{{ booking.id }}">Delete</button></td>
           </tr>
         {% endfor %}
