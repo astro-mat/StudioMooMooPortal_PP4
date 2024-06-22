@@ -20,7 +20,6 @@ def my_bookings(request):
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
             booking.user = request.user
-            booking.post = post
             booking.save()
     
     return render(
