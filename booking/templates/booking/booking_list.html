@@ -49,10 +49,10 @@
         <tbody>
           <tr>
             <th scope="row">{{ bookings.Artist_Name }}</th>
-            <td>{{ bookings.date }}</td>
+            <td>{{ bookings.Date }}</td>
             <td>{{ bookings.start_time }}</td>
             <td>{{ bookings.end_time }}</td>
-            <td>{{ bookings.BookingRequirements }}</td>
+            <td>{{ bookings.Booking_Requirements }}</td>
 
             <td>{% if user.is_authenticated %}
               <button class="btn btn-light btn-edit" comment_id="{{ booking.id }}">Edit</button>
