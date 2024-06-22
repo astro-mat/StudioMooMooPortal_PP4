@@ -15,6 +15,13 @@ def booking(request):
 def my_bookings(request):
     bookings = Booking.objects.filter(user=request.user)
     booking_form = BookingForm()
+    if request.method == "POST":
+        booking_form = BookingForm(data=request.POST)
+        if booking_form.is_valid():
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            booking.post = post
+            booking.save()
     
     return render(
         request, 
@@ -25,11 +32,9 @@ def my_bookings(request):
         },
     )
 
-# def edit_booking(request)
+
 def edit_booking(request, slug, booking_id):
-    """
-    view to edit comments
-    """
+    # view to edit booking
     if request.method == "POST":
 
         queryset = Post.objects.filter(status=1)
@@ -49,6 +54,7 @@ def edit_booking(request, slug, booking_id):
     return HttpResponseRedirect(reverse('booking_detail', args=[slug]))
 
 def delete_booking(request, booking_id):
+    # View to delete booking
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     if request.method == 'POST':
         booking.delete()
