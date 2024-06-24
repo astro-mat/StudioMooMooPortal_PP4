@@ -32,34 +32,43 @@ def my_bookings(request):
     )
 
 
-def edit_booking(request, slug, booking_id):
-    # view to edit booking
-    if request.method == "POST":
+# def edit_booking(request, slug, booking_id):
+#     # view to edit booking
+#     if request.method == "POST":
 
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        booking = get_object_or_404(Comment, pk=booking_id)
-        booking_form = BookingForm(data=request.POST, instance=comment)
+#         queryset = Post.objects.filter(status=1)
+#         post = get_object_or_404(queryset, slug=slug)
+#         booking = get_object_or_404(Comment, pk=booking_id)
+#         booking_form = BookingForm(data=request.POST, instance=comment)
 
-        if booking_form.is_valid():
-            booking = booking_form.save(commit=False)
-            booking.post = post
-            booking.approved = False
-            booking.save()
-            messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
-        else:
-            messages.add_message(request, messages.ERROR, 'Error updating booking!')
+#         if booking_form.is_valid():
+#             booking = booking_form.save(commit=False)
+#             booking.post = post
+#             booking.approved = False
+#             booking.save()
+#             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
+#         else:
+#             messages.add_message(request, messages.ERROR, 'Error updating booking!')
 
-    return HttpResponseRedirect(reverse('booking_detail', args=[slug]))
+#     return HttpResponseRedirect(reverse('booking_detail', args=[slug]))
+
+# def delete_booking(request, booking_id):
+#     # View to delete booking
+#     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+#     if request.method == 'POST':
+#         booking.delete()
+#     return redirect('booking/my_booking')
 
 def delete_booking(request, booking_id):
-    # View to delete booking
-    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    """
+    view to delete comment
+    """
+    booking = get_object_or_404(Booking, pk=booking_id)
+    
     if request.method == 'POST':
         booking.delete()
-    return redirect('booking/booking_detail')
 
-
+    return HttpResponseRedirect(reverse('my_booking'))
 
 
 

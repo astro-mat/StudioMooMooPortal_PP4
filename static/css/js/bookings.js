@@ -40,7 +40,7 @@ for (let button of editButtons) {
 */
 for (let button of deleteButtons) {
   button.addEventListener("click", (e) => {
-    let commentId = e.target.getAttribute("booking_id");
+    let bookingId = e.target.getAttribute("booking_id");
     deleteConfirm.href = `delete_booking/${bookingId}`;
     deleteModal.show();
   });

@@ -55,7 +55,7 @@
             <td>{{ bookings.Booking_Requirements }}</td>
 
             <td>{% if user.is_authenticated %}
-              <button class="btn btn-light btn-edit" comment_id="{{ booking.id }}">Edit</button>
+              <button class="btn btn-light btn-edit" booking_id="{{ booking.id }}">Edit</button>
               {% endif %}</td>
             <td><button type="button" class="btn btn-light btn-delete" booking_id="{{ booking.id }}">Delete</button></td>
           </tr>
@@ -63,7 +63,7 @@
         </tbody>
       </table>
     </div>
-    <!-- Delete confirmation modal
+    Delete booking modal
     <div class="modal fade" id="deleteModal" tabindex="-1"
       aria-labelledby="deleteModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -75,7 +75,7 @@
               data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Are you sure you want to delete your comment?
+            Are you sure you want to delete your booking?
             This action cannot be undone.
           </div>
           <div class="modal-footer">
@@ -86,7 +86,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 </body>
 </html>
 {% endblock %}
