@@ -45,19 +45,19 @@
             <th></th>
           </tr>
         </thead>
-        {% for bookings in bookings %}
+        {% for booking in bookings %}
         <tbody>
           <tr>
-            <th scope="row">{{ bookings.Artist_Name }}</th>
-            <td>{{ bookings.Date }}</td>
-            <td>{{ bookings.start_time }}</td>
-            <td>{{ bookings.end_time }}</td>
-            <td>{{ bookings.Booking_Requirements }}</td>
-
-            <td>{% if user.is_authenticated %}
-              <button class="btn btn-light btn-edit" booking_id="{{ booking.id }}">Edit</button>
-              {% endif %}</td>
-            <td><button type="button" class="btn btn-light btn-delete" booking_id="{{ booking.id }}">Delete</button></td>
+            <th scope="row">{{ booking.Artist_Name }}</th>
+            <td>{{ booking.Date }}</td>
+            <td>{{ booking.start_time }}</td>
+            <td>{{ booking.end_time }}</td>
+            <td>{{ booking.Booking_Requirements }}</td>
+            {% if user.is_authenticated %}
+            <td>
+              <a class="btn btn-light btn-edit" href="{% url 'edit_booking' booking.pk%}">Edit</a>
+            <td><a class="btn btn-light btn-edit" href="{% url 'delete_booking' booking.pk%}">Delete</a></td>
+            {% endif %}</td>
           </tr>
         {% endfor %}
         </tbody>

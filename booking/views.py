@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import *
 from .forms import *
 
@@ -32,25 +33,32 @@ def my_bookings(request):
     )
 
 
-# def edit_booking(request, slug, booking_id):
-#     # view to edit booking
-#     if request.method == "POST":
+def edit_booking(request, booking_id):
+    # view to edit booking
+    queryset = Booking.objects.all()
+    booking = get_object_or_404(queryset, pk=booking_id)
+    booking_form = BookingForm(instance=booking)
 
-#         queryset = Post.objects.filter(status=1)
-#         post = get_object_or_404(queryset, slug=slug)
-#         booking = get_object_or_404(Comment, pk=booking_id)
-#         booking_form = BookingForm(data=request.POST, instance=comment)
+    if request.method == "POST":
+        queryset = Booking.objects.all()
+        booking = get_object_or_404(queryset, pk=booking_id)
+        booking_form = BookingForm(data=request.POST, instance=booking)
 
-#         if booking_form.is_valid():
-#             booking = booking_form.save(commit=False)
-#             booking.post = post
-#             booking.approved = False
-#             booking.save()
-#             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
-#         else:
-#             messages.add_message(request, messages.ERROR, 'Error updating booking!')
-
-#     return HttpResponseRedirect(reverse('booking_detail', args=[slug]))
+        if booking_form.is_valid():
+            booking = booking_form.save()
+            messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
+            return HttpResponseRedirect(reverse('my_bookings'))
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating booking!')
+    return render(
+        request, 
+        "booking/booking_edit.html",
+        {
+            'booking_form' : booking_form,
+        },
+    )
+        
+    
 
 # def delete_booking(request, booking_id):
 #     # View to delete booking
@@ -67,8 +75,18 @@ def delete_booking(request, booking_id):
     
     if request.method == 'POST':
         booking.delete()
+        messages.add_message(request, messages.SUCCESS, 'Booking Deleted!')
+        return HttpResponseRedirect(reverse('my_bookings'))
+    else:
+        return render(
+        request, 
+        "booking/booking_delete.html",
+        {
+            'booking' : booking,
+        },
+    )
 
-    return HttpResponseRedirect(reverse('my_booking'))
+    
 
 
 
