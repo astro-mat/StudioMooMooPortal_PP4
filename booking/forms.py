@@ -10,7 +10,7 @@ from django import forms
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = '__all__'
+        fields = ('Artist_Name','Date','start_time','end_time','Booking_Requirements')
         widgets = {
             'Artist_Name': forms.Textarea(attrs={'cols': 60, 'rows': 1}),
             'Date': forms.TextInput(attrs={'type': 'date'}),
