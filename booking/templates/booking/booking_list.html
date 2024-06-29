@@ -38,8 +38,6 @@
           <tr>
             <th scope="col">Artist Name</th>
             <th scope="col">Date</th>
-            <th scope="col">Start Time</th>
-            <th scope="col">End Time</th>
             <th scope="col">Requirements</th>
             <th></th>
             <th></th>
@@ -50,8 +48,6 @@
           <tr>
             <th scope="row">{{ booking.Artist_Name }}</th>
             <td>{{ booking.Date }}</td>
-            <td>{{ booking.start_time }}</td>
-            <td>{{ booking.end_time }}</td>
             <td>{{ booking.Booking_Requirements }}</td>
             {% if user.is_authenticated %}
             <td>
