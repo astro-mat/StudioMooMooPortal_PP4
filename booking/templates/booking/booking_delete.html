@@ -19,12 +19,14 @@
             <form id="bookingForm" method="post"
               style="margin-top: 1.3em;">
               {% csrf_token %}
-              <h3> Are you sure you want to delete te following booking ?</h3>
-              <h4>{{booking.Artist_Name}} -- {{booking.Date}} -- {{booking.start_time}}</h4>
+              <h3> Are you sure you want to delete the following booking ?</h3>
+              <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
               <button id="BookingButton" type="submit"
-                class="btn btn-lg btn-light">Delete A Booking</button>
+                class="btn btn-lg btn-light">Delete Booking</button>
                 <a href="{% url 'my_bookings'%}"
-                class="btn btn-lg btn-light">Cancel</a>
+              <button id="CancelButton" type="submit"
+                class="btn btn-lg btn-light">Cancel</button>
+                <a href="{% url 'my_bookings'%}"
               
             </form>
             {% else %}
