@@ -23,6 +23,7 @@ def my_bookings(request):
             booking.user = request.user
             booking.save()
     
+
     return render(
         request, 
         "booking/booking_list.html",
