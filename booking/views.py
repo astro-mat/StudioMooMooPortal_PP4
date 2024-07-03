@@ -22,6 +22,8 @@ def my_bookings(request):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
+            # return HttpResponseRedirect(reverse('/booking_delete/'))
+
     
 
     return render(

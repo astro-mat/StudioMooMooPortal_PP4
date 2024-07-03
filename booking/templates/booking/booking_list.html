@@ -22,6 +22,7 @@
               {% csrf_token %}
               <button id="BookingButton" type="submit"
                 class="btn btn-lg btn-light">Make A Booking</button>
+                <!-- <a class="btn btn-light btn-edit" href="{% url 'my_bookings' %}">Make Booking</a> -->
             </form>
             {% else %}
             <p>Log in to make a booking</p>

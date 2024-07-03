@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     '.herokuapp.com',
     '8000-astromat-studiomoomoopo-tng9e15sj4n.ws.codeinstitute-ide.net',
     '8000-astromat-studiomoomoopo-98wi95ztyvt.ws-eu114.gitpod.io',
+    '8000-astromat-studiomoomoopo-98wi95ztyvt.ws-eu115.gitpod.io',
 ]
 
 
