@@ -90,23 +90,23 @@ def delete_booking(request, booking_id):
     )
 
     
-def success_booking(request, booking_id):
-    """
-    Success page after making a booking
-    """
-    booking = get_object_or_404(Booking, pk=booking_id)
+# def success_booking(request, booking_id):
+#     """
+#     Success page after making a booking
+#     """
+#     booking = get_object_or_404(Booking, pk=booking_id)
     
-    if request.method == 'POST':
-        messages.add_message(request, messages.SUCCESS, 'Booking created!')
-        return HttpResponseRedirect(reverse('my_bookings'))
-    else:
-        return render(
-        request, 
-        "booking/booking_success.html",
-        {
-            'booking' : booking,
-        },
-    )
+#     if request.method == 'POST':
+#         messages.add_message(request, messages.SUCCESS, 'Booking created!')
+#         return HttpResponseRedirect(reverse('my_bookings'))
+#     else:
+#         return render(
+#         request, 
+#         "booking/booking_success.html",
+#         {
+#             'booking' : booking,
+#         },
+#     )
 
 
 

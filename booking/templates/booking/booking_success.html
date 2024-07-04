@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %} Studio Moo Moo {% endblock %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<body>
+    <main class="flex-shrink-0 main-bg">
+        {% if user.is_authenticated %}
+        <p class="text-end m-3">You are logged in as: {{ user }}</p>
+        {% else %}
+        <p class="text-end m-3">You are not logged in</p>
+        {% endif %}
+    <div>
+        <h1>Delete a Booking</h1>
+        <div class="col-md-4 mb-4 mt-3">
+          <div>
+            {% if user.is_authenticated %}
+            <form id="bookingForm" method="post"
+              style="margin-top: 1.3em;">
+              {% csrf_token %}
+              <h3> Are you sure you want to make this booking ?</h3>
+              <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
+              <button id="BookingButton" type="submit"
+                class="btn btn-lg btn-light">Delete Booking</button>
+                <a href="{% url 'my_bookings'%}"
+              <button id="CancelButton" type="submit"
+                class="btn btn-lg btn-light">Cancel</button>
+                <a href="{% url 'my_bookings'%}"
+              
+            </form>
+            {% else %}
+            <p>Log in to make a booking</p>
+            {% endif %}
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
+{% endblock %}
