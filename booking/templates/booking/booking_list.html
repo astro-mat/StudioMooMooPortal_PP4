@@ -22,7 +22,7 @@
               {% csrf_token %}
               <button id="BookingButton" type="submit"
                 class="btn btn-lg btn-light">Make A Booking</button>
-                <!-- <a class="btn btn-light btn-edit" href="{% url 'my_bookings' %}">Make Booking</a> -->
+                <!-- <a class="btn btn-light btn-edit" href="{% url 'booking:my_bookings' %}">Make Booking</a> -->
             </form>
             {% else %}
             <p>Log in to make a booking</p>
@@ -52,9 +52,9 @@
             <td>{{ booking.booking_requirements }}</td>
             {% if user.is_authenticated %}
             <td>
-              <a class="btn btn-light btn-edit" href="{% url 'edit_booking' booking.pk%}">Edit</a>
+              <a class="btn btn-light btn-edit" href="{% url 'booking:edit_booking' booking.pk%}">Edit</a>
             <td>
-              <a class="btn btn-light btn-edit" href="{% url 'delete_booking' booking.pk%}">Delete</a></td>
+              <a class="btn btn-light btn-edit" href="{% url 'booking:delete_booking' booking.pk%}">Delete</a></td>
             {% endif %}</td>
           </tr>
         {% endfor %}

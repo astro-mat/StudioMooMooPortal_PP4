@@ -12,7 +12,7 @@
         <p class="text-end m-3">You are not logged in</p>
         {% endif %}
     <div>
-        <h1>Delete a Booking</h1>
+        <h1>Your booking is Successful</h1>
         <div class="col-md-4 mb-4 mt-3">
           <div>
             {% if user.is_authenticated %}
@@ -22,11 +22,11 @@
               <h3> Are you sure you want to make this booking ?</h3>
               <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
               <button id="BookingButton" type="submit"
-                class="btn btn-lg btn-light">Delete Booking</button>
-                <a href="{% url 'my_bookings'%}"
+                class="btn btn-lg btn-light">Confirm Booking</button>
+                <a href="{% url 'booking:my_bookings'%}"
               <button id="CancelButton" type="submit"
-                class="btn btn-lg btn-light">Cancel</button>
-                <a href="{% url 'my_bookings'%}"
+                class="btn btn-lg btn-light">Back to Bookings</button>
+                <a href="{% url 'booking:my_bookings'%}"
               
             </form>
             {% else %}
