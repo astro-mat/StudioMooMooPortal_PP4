@@ -50,7 +50,7 @@ def edit_booking(request, booking_id):
         if booking_form.is_valid():
             booking = booking_form.save()
             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
-            return redirect(reverse('my_bookings'))
+            return redirect(reverse('booking:my_bookings'))
         else:
             messages.add_message(request, messages.ERROR, 'Error updating booking!')
     return render(
