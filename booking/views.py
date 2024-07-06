@@ -26,8 +26,6 @@ def my_bookings(request):
             print('booking id', booking.id)
             return redirect(reverse('booking:success_booking', args=[booking.id]))
 
-    
-
     return render(
         request, 
         "booking/booking_list.html",
@@ -63,25 +61,17 @@ def edit_booking(request, booking_id):
         },
     )
         
-    
-
-# def delete_booking(request, booking_id):
-#     # View to delete booking
-#     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
-#     if request.method == 'POST':
-#         booking.delete()
-#     return redirect('booking/my_booking')
 
 def delete_booking(request, booking_id):
     """
-    view to delete comment
+    view to delete booking
     """
     booking = get_object_or_404(Booking, pk=booking_id)
     
     if request.method == 'POST':
         booking.delete()
         messages.add_message(request, messages.SUCCESS, 'Booking Deleted!')
-        return redirect(reverse('booking:delete_booking', args=[booking.id]))
+        return redirect(reverse('booking:my_bookings'))
     else:
         return render(
         request, 

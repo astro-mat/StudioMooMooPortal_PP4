@@ -19,15 +19,10 @@
             <form id="bookingForm" method="post"
               style="margin-top: 1.3em;">
               {% csrf_token %}
-              <h3> Are you sure you want to make this booking ?</h3>
+              <h3> Booking Successfull</h3>
               <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
-              <button id="BookingButton" type="submit"
-                class="btn btn-lg btn-light">Confirm Booking</button>
-                <a href="{% url 'booking:my_bookings'%}"
-              <button id="CancelButton" type="submit"
-                class="btn btn-lg btn-light">Back to Bookings</button>
-                <a href="{% url 'booking:my_bookings'%}"
-              
+              <a href="{% url 'booking:my_bookings'%}"
+                class="btn btn-lg btn-light">Back to Bookings</a>              
             </form>
             {% else %}
             <p>Log in to make a booking</p>
