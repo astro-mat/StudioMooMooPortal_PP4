@@ -4,18 +4,27 @@
 {% block content %}
 <!-- Hero image with welcome text -->
 
-<div class="hero"> 
-    <div class="container">     
-      <div class="hero-content"> 
-        <style> .hero {background: url("{% static 'images/stone.webp' %}") center center no-repeat}</style>
-        <div class="row"> 
-          <div class="col-md-12"> 
-            <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}">
-          </div>  
-        </div> 
+<div class="p-5 text-center bg-image rounded-3 heroTest" style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+    height: 400px;
+  ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Heading</h1>
+        <h4 class="mb-3">Subheading</h4>
+        <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
       </div>
-    </div> 
+    </div>
   </div>
+</div>
+
+
+<div class="hero container-fluid"> 
+  <style> .hero {background: url("{% static 'images/stone.webp' %}") center center no-repeat}</style>
+  <img class="centerLogo heroLogo" src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}">
+</div>
+
 <div class="row hero-img mt-2 mb-lg-4">
     <div class="col-md-6 my-5 mx-auto">
         <div class="w-100 px-5 py-4 members rounded text-center mt-5">

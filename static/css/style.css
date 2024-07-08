@@ -78,11 +78,12 @@ hr {
 
 .hero {
     min-height: 50vh;
-    /* background: url("static/images/stone.webp") center center no-repeat; */
     background-size: cover;
     position: relative;
+    width: 100vw !important;
+    height: 100%;
   }
-  .hero:before {
+  /* .hero:before {
     content:"";
     position: absolute;
     top: 0;
@@ -95,4 +96,18 @@ hr {
     position: absolute;
     bottom: 15px;
     color: #fff;
-  }
+  } */
+
+/* Center logo on the hero image */
+.centerLogo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%)
+}
+.heroLogo {
+
+}
+
+.heroTest {
+    width: 100vw;
+    height: 100%;
