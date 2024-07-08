@@ -78,7 +78,7 @@ hr {
 
 .hero {
     min-height: 50vh;
-    background: url("../images/stone.webp") center center no-repeat;
+    /* background: url("static/images/stone.webp") center center no-repeat; */
     background-size: cover;
     position: relative;
   }
