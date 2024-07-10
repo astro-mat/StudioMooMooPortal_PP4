@@ -25,9 +25,7 @@ def clean(self):
         if date < date.today():
             raise ValidationError("Please select a date in the future.")
 
-        existing_bookings = Booking.objects.filter(
-            date=date
-        ).exclude(id=self.instance.id)
+        existing_bookings = Booking.objects.filter(date=date).exclude(id=self.instance.id)
 
         if existing_bookings:
             raise ValidationError(
