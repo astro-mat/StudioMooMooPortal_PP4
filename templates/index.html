@@ -5,8 +5,10 @@
 <!-- Hero image with welcome text -->
 
 <!-- <div class="p-5 text-center bg-image rounded-3" style="
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-    height: 400px">
+    background-image: url({% static 'images/stone.webp' %});
+    height: 400px;
+    background-repeat: no-repeat;
+    ">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
@@ -18,11 +20,12 @@
   </div>
 </div> -->
 
-<div class="hero container-fluid no-padding"> 
-  <div class="row">
-    <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" />
-  <!-- <style> .hero {background: url("{% static 'images/stone.webp' %}") center center no-repeat}</style> -->
-    <img class="centerLogo heroLogo" src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}">
+<div class="hero container-fluid"> 
+  <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" style="width:100%>
+  <div class="container">
+    <div class="heroLogo centerLogo" >
+      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid">
+    </div>
   </div>
 </div>
 
