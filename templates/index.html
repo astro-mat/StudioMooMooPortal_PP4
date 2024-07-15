@@ -4,10 +4,9 @@
 {% block content %}
 <!-- Hero image with welcome text -->
 
-<div class="p-5 text-center bg-image rounded-3 heroTest" style="
+<!-- <div class="p-5 text-center bg-image rounded-3" style="
     background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-    height: 400px;
-  ">
+    height: 400px">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
@@ -17,16 +16,18 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-
-<div class="hero container-fluid"> 
-  <style> .hero {background: url("{% static 'images/stone.webp' %}") center center no-repeat}</style>
-  <img class="centerLogo heroLogo" src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}">
+<div class="hero container-fluid no-padding"> 
+  <div class="row">
+    <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" />
+  <!-- <style> .hero {background: url("{% static 'images/stone.webp' %}") center center no-repeat}</style> -->
+    <img class="centerLogo heroLogo" src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}">
+  </div>
 </div>
 
 <div class="row hero-img mt-2 mb-lg-4">
-    <div class="col-md-6 my-5 mx-auto">
+    <div class="col-md-8 my-5 mx-auto">
         <div class="w-100 px-5 py-4 members rounded text-center mt-5">
             <h2>Boutique Recording facility in the northwest of ireland</h2>
             <p>

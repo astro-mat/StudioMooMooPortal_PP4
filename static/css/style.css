@@ -82,7 +82,7 @@ hr {
     min-height: 50vh;
     background-size: cover;
     position: relative;
-    width: 100vw !important;
+    /* width: 100vw !important; */
     height: 100%;
   }
   /* .hero:before {
@@ -106,10 +106,3 @@ hr {
     top: 50%; left: 50%;
     transform: translate(-50%, -50%)
 }
-.heroLogo {
-
-}
-
-.heroTest {
-    width: 100vw;
-    height: 100%;
