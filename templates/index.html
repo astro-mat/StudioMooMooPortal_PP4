@@ -20,16 +20,19 @@
   </div>
 </div> -->
 
+
 <div class="hero container-fluid"> 
   <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" style="width:100%>
   <div class="container">
     <div class="heroLogo centerLogo" >
-      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid">
+      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid rounded mx-auto d-block">
     </div>
   </div>
 </div>
 
-<div class="row hero-img mt-2 mb-lg-4">
+
+
+<div class="introText row hero-img mt-2 mb-lg-4">
     <div class="col-md-8 my-5 mx-auto">
         <div class="w-100 px-5 py-4 members rounded text-center mt-5">
             <h2>Boutique Recording facility in the northwest of ireland</h2>
@@ -39,6 +42,10 @@
             <a href="{% url 'booking:booking' %}" class="btn btn-light btn-lg">Click to make booking</a>
         </div>
     </div>
+</div>
+
+<div class="row justify-content-center">
+  <hr class="col-8 mt-5 mb-4 mb-lg-5">
 </div>
 
 {% endblock %}

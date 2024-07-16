@@ -4,16 +4,19 @@
 
 {% block content %}
 
+
 <body>
+  <div class="container">
+    <div class="row">
     <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
         <p class="text-end m-3">You are logged in as: {{ user }}</p>
         {% else %}
         <p class="text-end m-3">You are not logged in</p>
         {% endif %}
-    <div>
+    <div class="container">
         <h1>Make a new Booking</h1>
-        <div class="col-md-4 mb-4 mt-3">
+        <div class="col-md-6 mb-4 mt-3">
           <div>
             {% if user.is_authenticated %}
             <form id="bookingForm" method="post"
@@ -22,7 +25,6 @@
               {% csrf_token %}
               <button id="BookingButton" type="submit"
                 class="btn btn-lg btn-light">Make A Booking</button>
-                <!-- <a class="btn btn-light btn-edit" href="{% url 'booking:my_bookings' %}">Make Booking</a> -->
             </form>
             {% else %}
             <p>Log in to make a booking</p>
@@ -30,7 +32,9 @@
           </div>
         </div>
     </div>
-
+    </div>
+  </div>  
+  <div class="container">
     <div>
         <h1>Existing bookings for {{ user }}</h1>
     </div>
@@ -61,6 +65,7 @@
         </tbody>
       </table>
     </div>
+  </div>
 </body>
 </html>
 {% endblock %}
