@@ -110,3 +110,8 @@ hr {
 #gallery-photos {
     margin: 0px;
 }
+
+footer {
+    background-color: #333;
+    color:#fff;
+  }
