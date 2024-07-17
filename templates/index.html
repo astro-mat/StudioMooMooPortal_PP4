@@ -4,7 +4,7 @@
 {% block content %}
 <!-- Hero image with welcome text -->
 
-<!-- <div class="p-5 text-center bg-image rounded-3" style="
+<!-- <div class="p-5 text-center bg-image  -3" style="
     background-image: url({% static 'images/stone.webp' %});
     height: 400px;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
   <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" style="width:100%>
   <div class="container">
     <div class="heroLogo centerLogo" >
-      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid rounded mx-auto d-block">
+      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid   mx-auto d-block">
     </div>
   </div>
 </div>
@@ -34,7 +34,7 @@
 
 <div class="introText row hero-img mt-2 mb-lg-4">
     <div class="col-md-8 my-5 mx-auto">
-        <div class="w-100 px-5 py-4 members rounded text-center mt-5">
+        <div class="w-100 px-5 py-4 members   text-center mt-5">
             <h2>Boutique Recording facility in the northwest of ireland</h2>
             <p>
                 Welcome to Studio Moo Moo, an idyllic recording haven in rural north-west Ireland, just a short drive from Dublin and Knock international Airport. This 16-track studio, a labour of love by creator Mat Warren, offers a retreat for intimate songwriting and recording. Its one-room design seamlessly integrates live tracking with fostering a fluid creative process. Meticulous attention to lighting, decor, and top-notch acoustic design creates a cozy and inspiring atmosphere. Whether you're a solo artist or a group, Studio Moo Moo provides the perfect backdrop for your musical journey in the serene landscapes of rural Ireland.
@@ -43,9 +43,79 @@
         </div>
     </div>
 </div>
-
+<!-- divider -->
 <div class="row justify-content-center">
   <hr class="col-8 mt-5 mb-4 mb-lg-5">
 </div>
+<!-- divider -->
+
+<!-- Gallery -->
+<div id="gallery" class="row mt-2 mb-lg-4">
+  <div class="col-md-8 my-5 mx-auto">
+      <div class="w-100 px-5 py-4 members text-center mt-5">
+          <h2>Gallery</h2>
+          <p>
+            A selection of images from the studio
+          </p>
+      </div>
+  </div>
+</div>
+
+<div id="gallery-photos" class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="{% static 'images/gallery/cables.webp' %}"
+      class="w-100 mb-4"
+      alt="Cables on wall"
+    />
+
+    <img
+      src="{% static 'images/gallery/amps.webp' %}"
+      class="w-100 mb-4"
+      alt="Amplifiers against wall"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="{% static 'images/gallery/pbass.webp' %}"
+      class="w-100 mb-4"
+      alt="Fender bass on a stone wall"
+    />
+
+    <img
+      src="{% static 'images/gallery/modular.webp' %}"
+      class="w-100 mb-4"
+      alt="Modular synths in case"
+    />
+
+    <img
+    src="{% static 'images/gallery/roof1.webp' %}"
+    class="w-100 mb-4"
+    alt="wooden slats on studio roof"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="{% static 'images/gallery/sofa.webp' %}"
+      class="w-100 mb-4"
+      alt="sofa in studio attic space"
+    />
+
+    <img
+      src="{% static 'images/gallery/roof.webp' %}"
+      class="w-100 mb-4"
+      alt="wooden slats on studio roof"
+    />
+
+    <img
+    src="{% static 'images/gallery/fenderamp.webp' %}"
+    class="w-100 mb-4"
+    alt="Fender princeton amplifier"
+  />
+  </div>
+</div>
+<!-- Gallery -->
 
 {% endblock %}
