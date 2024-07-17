@@ -26,7 +26,8 @@
 <body>
   <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-dark fixed-top">
     <a class="navbar-brand" href="{% url 'booking:home' %}">
-    <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" width="200" id="image-logo" alt="Studio Moo Moo Logo">
+      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" width="200" id="image-logo"
+        alt="Studio Moo Moo Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,76 +62,43 @@
       </ul>
     </div>
   </nav>
-    <div class="container top-buffer">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                {% for message in messages %}
-                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
-                    {{ message | safe }}
-                </div>
-                {% endfor %}
-            </div>
+  <div class="container top-buffer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          {% for message in messages %}
+          <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+            {{ message | safe }}
+          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
-      
-    {% block content %}
-<!-- Each Page Content -->
-    {% endblock content %}
+  </div>
 
-      <footer class="bg-body-tertiary text-center container-fluid">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-            data-mdb-ripple-init
-              class="btn text-white btn-floating m-1"
-              style="background-color: #3b5998;"
-              href="https://www.facebook.com/"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              data-mdb-ripple-init
-              class="btn text-white btn-floating m-1"
-              style="background-color: #55acee;"
-              href=https://www.x.com/
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              data-mdb-ripple-init
-              class="btn text-white btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="https://www.instagram.com/studio_moomoo/"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2024 Copyright: Studio Moo Moo
-        </div>
-        <!-- Copyright -->
-      </footer>
+  {% block content %}
+  <!-- Content Goes here -->
+  {% endblock content %}
+
+  <footer class="footer mt-auto py-3 dark-bg">
+    <p class="m-0 text-center text-white">© 2024 Copyright: Studio Moo Moo</p>
+    <p class="m-0 text-center text-white">Follow us:
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
+        href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+        href="https://www.instagram.com" role="button"><i class="fab fa-instagram"></i></a>
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;"
+        href=https://www.x.com/ role="button"><i class="fab fa-twitter"></i></a>
+    </p>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <!--Font Awesome Kit-->
   <script src="https://kit.fontawesome.com/1e7673fa14.js" crossorigin="anonymous"></script>
-  <script>$("#copyright").text(new Date().getFullYear());</script>
+  <script>
+    $("#copyright").text(new Date().getFullYear());
+  </script>
 
   {% block extras %}
   {% endblock extras %}
