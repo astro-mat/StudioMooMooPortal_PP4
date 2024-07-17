@@ -115,3 +115,17 @@ footer {
     background-color: #333;
     color:#fff;
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+/* Moves content up from behind footer */
+  
+  .clear { 
+    clear: both; 
+    height: 120px; 
+}
