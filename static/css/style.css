@@ -93,6 +93,13 @@ hr {
     top: 50%; left: 50%;
     transform: translate(-50%, -50%)
 }
+
+.callToAction {
+    position: absolute;
+    top: 120%; left: 50%;
+    transform: translate(-50%, -50%)
+}
+
 /* Fix left and right scroll on home page */
 .row {
     margin-left: 0px;
@@ -124,7 +131,6 @@ footer {
   }
 
 /* Moves content up from behind footer */
-  
   .clear { 
     clear: both; 
     height: 120px; 
