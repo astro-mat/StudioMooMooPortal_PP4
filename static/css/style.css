@@ -135,3 +135,19 @@ footer {
     clear: both; 
     height: 120px; 
 }
+
+#equipment-items {
+    background: url('../images/gallery/stone.webp') no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+
+#equipment-items div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 25px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*creates a grid around the equipment list*/
+    border: 2px solid #9EAFBD;
+
+}
