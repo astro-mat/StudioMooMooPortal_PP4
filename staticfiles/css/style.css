@@ -93,6 +93,13 @@ hr {
     top: 50%; left: 50%;
     transform: translate(-50%, -50%)
 }
+
+.callToAction {
+    position: absolute;
+    top: 120%; left: 50%;
+    transform: translate(-50%, -50%)
+}
+
 /* Fix left and right scroll on home page */
 .row {
     margin-left: 0px;
@@ -107,3 +114,24 @@ hr {
 
 }
 
+#gallery-photos {
+    margin: 0px;
+}
+
+footer {
+    background-color: #333;
+    color:#fff;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+/* Moves content up from behind footer */
+  .clear { 
+    clear: both; 
+    height: 120px; 
+}
