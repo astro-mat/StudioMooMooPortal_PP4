@@ -123,12 +123,16 @@ footer {
     color:#fff;
   }
 
-  .footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-  }
+}
+
+#make_booking {
+    margin-bottom: 60px;
+}
 
 /* Moves content up from behind footer */
   .clear { 
@@ -140,7 +144,7 @@ footer {
     background: url('../images/gallery/stone.webp') no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
-
+}
 #equipment-items div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -151,3 +155,23 @@ footer {
     border: 2px solid #9EAFBD;
 
 }
+
+.alert {
+    background-color: green;
+}
+
+@media only screen and (max-width: 620px) {
+    #make_booking {
+        width: 100%;
+        font-size: small;
+    }
+
+    .callToAction {
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+  }
+
