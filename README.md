@@ -188,8 +188,108 @@ Imagery was important as it signals to prospective clients what they can expect 
 
 ![Wireframe of index page](doc/wireframe-make-booking.webp)
 
+#### Edit Booking Page
+
+![Wireframe of index page](doc/wireframe-edit-booking.webp)
+
+#### Manage Booking Page
+
+![Wireframe of index page](doc/wireframe-edit-booking.webp)
+
+#### Booking Success Page
+
+![Wireframe of index page](doc/wireframe-success-page.webp)
+
+#### 500 Page
+
+![Wireframe of index page](doc/wireframe-edit-500-page.webp)
+
+#### 404 Page
+
+![Wireframe of index page](doc/wireframe-edit-404-page.webp)
+
+## Features
+
+### Header
+
+#### Navigation bar
+
+![Navigation bar as a not logged in user](doc/navbar-not-logged-in.PNG)
+
+- The navigation bar makes it easy for the user to navigate the site. 
+- The user can find the different parts of the home page (and will include more in future versions) and enables the user to login to the portal and log out.
+- The navbar is fixed to the top of all pages to allow easy navigation
+
+![Navigation bar as a logged in user](doc/navbar-logged-in.PNG)
+
+Once the user is logged in, the navbar changes. "Register/Login" changes to "Logout"
+
+### Index page
+
+#### Hero image
+
+![Hero image at index page](doc/hero-image.PNG)
+
+- The hero image is a simple backdrop of the stone walls of the studio outlining the opening theme of the site. Over the top of this is a bold large transparent version of the studio logo in white.
+- This section provides the user with a clear visual opening to the site and what to expect
+- Below the logo is a call to action button inviting the user to "click to make booking"
+
+#### About Us Section
+
+![About us Section at index page](doc/about-us.PNG)
+
+- Next up is a short section of text giving a brief description of the studio and its origins.
+
+#### Gallery Section
+
+![Gallery at index page](doc/gallery.PNG)
+
+### Booking Info Page
+
+![Booking Info page](doc/booking-info.PNG)
+
+- The site user is brought to a page after clicking the hero image call to action button that details the studio opening hours
+- The user is then invited to click another to log in to the Client portal in order to see studio availability and make a booking.
+
+### Sign In Page
+
+![Sign in page with fields for email and password](doc/sign-in.PNG)
+
+The sign-in page allows existing users to log in, enhancing the user experience by eliminating the need to enter their email each time they want to make a booking. It also enables users to view all their bookings in one place.
 
 
+### Register
+
+![Register page with fields for email, username, password and password again](doc/register.PNG)
+
+The Register page includes fields for the user to enter their email, username, password, and password confirmation. This ensures the user registers a contact method and avoids typos in the password.
+
+
+
+
+
+
+
+### Footer
+
+![footer](doc/footer.PNG)
+
+- The footer section includes links to Studio Moo Moo's Facebook, Instagram and twitter pages.
+- The design colour and styling reflect those of the header
+- The links open to a new tab to allow easy navigation for the user. 
+- The footer is valuable to the user as it allows them to find and follow Mind Yoga on social media.
+- There is also a small piece of stating the copyright restriction
+
+
+
+
+
+
+
+FUTURE
+
+Add more content to home page
+add contact me section
 
 
 
