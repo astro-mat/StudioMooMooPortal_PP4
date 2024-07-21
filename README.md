@@ -27,10 +27,10 @@ Six Epics were decided upon with a total of 39 user stories. All user stories ca
 
 | Class | Points | Percentage of total points |
 | -------------- | --------- | --------------- |
-| Must have | 62 p | 56 % |
-| Should have | 16 p | 15 % |
-| Could have | 8 p | 7 % |
-| Won't have | 24 p | 22 % |
+| Must have | 46 p | 59 % |
+| Should have | 4 p | 5 % |
+| Could have | 0 p | 0 % |
+| Won't have | 28 p | 36 % |
 
 The following user stories were completed in the first release of Studio Moo Moo Client Portal. To view the Won't have, they are listed here [Projects board](https://github.com/users/astro-mat/projects/2/views/1).
 
@@ -99,26 +99,6 @@ Once nessesary information is given by user, there is a clear procedure to follo
 
 #### Epic 4 - Studio booking system
 
-**User Story - Edit Studio availability**
-
-As a site administrator, I can CRUD available time slots so that clients can see when the studio is available
-
-- Acceptance Criteria 1  
-The administrator can create time slots in the admin panel.
-- Acceptance Criteria 2  
-The administrator can view time slots in the admin panel.
-- Acceptance Criteria 3  
-The administrator can update time slots in the admin panel.
-- Acceptance Criteria 3  
-The administrator can delete time slots in the admin panel.
-
-**User Story - View Available Time Slots**
-
-As a registered user, I can view available time slots so that I can decide when is best time to book
-
-- Acceptance Criteria 1  
-The user can see what time slots are available.
-
 **User Story - Creating a new booking**
 
 As a registered user, I can book a slot so that I can secure my place to use the studio.
@@ -150,32 +130,6 @@ The user can cancel a booking they have made
 - Acceptance Criteria 2  
 There is a confirmation of the cancellation
 
-#### Epic 5 - Recorded media Streaming
-
-**User Story - Streaming/downloading my media**
-
-As a registered user, I can stream and download any media that I have been involved with so that I can use the medai created
-
-- Acceptance Criteria 1  
-Registered user can navigate to folders and list of recorded media
-- Acceptance Criteria 2  
-User can stream there recorded media
-- Acceptance Criteria 3  
-User can download recorded media
-
-**User Story - Uploading my Media**
-
-As a site owner, I can upload recorded media so that the clients can strream or download
-
-- Acceptance Criteria 1  
-Site owner can navigate to area to upload media 
-- Acceptance Criteria 2  
-Site owner can upload media
-- Acceptance Criteria 3  
-Site owner can delete media
-- Acceptance Criteria 4  
-Site owner can modify media
-
 #### Epic 6 - Enhancing Website Asthetics
 
 **User Story - Design is consistent with existing site**
@@ -195,6 +149,22 @@ The layout automatically adjusts based on screen size and orientation
 All elements such as text, images, buttons etc are easily viewed and visable on a range of devices
 - Acceptance Criteria 3  
 All navigation elements are optimised for touch devices
+
+## Design
+
+The design was very much dictated by the original website. It will use predominantly dark but high contrast text. It should draw attention with images that convey the profesional yet comfortable ethos of the studio.
+
+### Color Scheme
+
+The colour scheme is chosen again, to relate to the existing website. It is felt that the main dark elements convey a modern, professional style to prospective clients.
+
+### Typography
+
+The typography was chosen to fit in with the design style establised by the colour choices earlier while still being easy to read. Capitalisation was employed for titles to re-enforce this design choice.
+
+### Imagery
+
+Imagery was important as it signals to prospective clients what they can expect from booking the studio. They needed to highlight the design elements that make up the studios construction, the lighting choices, the equipment available and the general warm and comfortable environment that it claims to be.
 
 
 
