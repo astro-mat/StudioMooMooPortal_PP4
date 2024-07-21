@@ -166,12 +166,27 @@ The typography was chosen to fit in with the design style establised by the colo
 
 Imagery was important as it signals to prospective clients what they can expect from booking the studio. They needed to highlight the design elements that make up the studios construction, the lighting choices, the equipment available and the general warm and comfortable environment that it claims to be.
 
+### Wireframes
 
+#### Index page
 
+![Wireframe of index page](doc/wireframe-index.webp)
 
+#### Booking Info Page
 
+![Wireframe of index page](doc/wireframe-booking-info.webp)
 
+#### Sign-In Page
 
+![Wireframe of index page](doc/wireframe-sign-in.webp)
+
+#### Sign-Out Page
+
+![Wireframe of index page](doc/wireframe-sign-out.webp)
+
+#### Make Booking Page
+
+![Wireframe of index page](doc/wireframe-make-booking.webp)
 
 
 
