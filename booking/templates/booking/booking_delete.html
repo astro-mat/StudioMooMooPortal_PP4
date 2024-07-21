@@ -4,36 +4,41 @@
 
 {% block content %}
 
-<body>
-    <main class="flex-shrink-0 main-bg">
+
+
+<body container mx-5 my-5>
+  <div class="row">
+    <div class="col-sm">
+      <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
         <p class="text-end m-3">You are logged in as: {{ user }}</p>
         {% else %}
         <p class="text-end m-3">You are not logged in</p>
         {% endif %}
-    <div>
-        <h1>Delete a Booking</h1>
-        <div class="col-md-4 mb-4 mt-3">
-          <div>
-            {% if user.is_authenticated %}
-            <form id="bookingForm" method="post"
-              style="margin-top: 1.3em;">
-              {% csrf_token %}
-              <h3> Are you sure you want to delete the following booking ?</h3>
-              <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
-              <button id="BookingButton" type="submit"
-                class="btn btn-lg btn-light">Delete Booking</button>
-                <a href="{% url 'booking:delete_booking' booking.pk%}"</a>
-                <a href="{% url 'booking:my_bookings'%}" class="btn btn-lg btn-light">Cancel</a> 
-              
-            </form>
-            {% else %}
-            <p>Log in to make a booking</p>
-            {% endif %}
+        <div>
+          <h1>Delete a Booking</h1>
+          <div class="col-md-4 mb-4 mt-3">
+            <div>
+              {% if user.is_authenticated %}
+              <form id="bookingForm" method="post" style="margin-top: 1.3em;">
+                {% csrf_token %}
+                <h3> Are you sure you want to delete the following booking ?</h3>
+                <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
+                <button id="BookingButton" type="submit" class="btn btn-lg btn-light">Delete Booking</button>
+                <a href="{% url 'booking:delete_booking' booking.pk%}" </a>
+                  <a href="{% url 'booking:my_bookings'%}" class="btn btn-lg btn-light">Cancel</a>
+
+              </form>
+              {% else %}
+              <p>Log in to make a booking</p>
+              {% endif %}
+            </div>
           </div>
         </div>
+      </main>
     </div>
-
+  </div>
 </body>
+
 </html>
 {% endblock %}

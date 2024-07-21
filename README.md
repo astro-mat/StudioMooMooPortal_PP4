@@ -272,6 +272,7 @@ The Register page includes fields for the user to enter their email, username, p
 - The date opens a date box. The user is unable to enter a date that is in the past or is booked by any other artist.
 - A button allows the user to make their booking.
 - Below this area is a list of bookings already made by this user.
+- Within this area, there are buttons to edit or delete each booking
 
 ### Booking Successful Page
 
@@ -280,6 +281,34 @@ The Register page includes fields for the user to enter their email, username, p
 - After the user has made a booking, they are brought to this page.
 - A simple summary of their booking is displayed
 - A button allows the user to be directed back to the booking detail page.
+
+### Edit Booking page
+
+![Edit Booking page](doc/edit-booking.PNG)
+
+- Once a user decides to edit a booking from the booking detail page, they are brought here.
+- The current details of the booking are displayed in text boxes. 
+- The user can edit any of the booking details.
+- The user can then use the buttons to either save the changes or cancel editing.
+- They are then brought back to the booking detail page and an alert informs them of their change.
+
+### Booking delete page
+
+![Edit Booking page](doc/booking-delete.PNG)
+
+- When a user clicks on "Delete" button on booking detail page, they are bought to this page.
+- The booking details are displayed and the user is asked if they are sure they want to delete or cancel the deleting process.
+- If they decide to delete, they are bought back to the booking detail page with confirmation that the booking was deleted and the table has updated.
+- If they change their mind and cancel, tehy are also brought back to the booking detail page with no changes having been made.
+
+### Log Out Page
+
+![Log Out page](doc/logout.PNG)
+
+- Once the user is finished, they can click the Logout button
+- They are then taken to the Log out page where they are asked to confirm that they want to log out
+- They can then choose to continue and be redirected to the index page.
+- Otherwise, they can click "Back to my bookings" or go anywhere using the navbar menu
 
 
 
@@ -295,19 +324,49 @@ The Register page includes fields for the user to enter their email, username, p
 - The footer is valuable to the user as it allows them to find and follow Mind Yoga on social media.
 - There is also a small piece of stating the copyright restriction
 
+### Password Reset Page
+
+![password Reset Page](doc/password-reset.PNG)
+
+- In the event of a user forgetting their password and being unable to login, on the login page, there is a link labled "forgot password?"
+- On clicking this link, they are brought to this page.
+- Here they are prompted to enter their email. once submited, an email is sent with instructions on how to change password.
+
+![Password reset email sent](doc/password-reset-sent.PNG)
+
+- Once the request to reset has been submitted, the user is taken to this page and they are instructed to follow the instutions on the email when they recieve it.
 
 
+## Features to be Added
 
+Several features can be added in the future.
 
+- Add more content to home page.
+- add "contact me" section.
+- Date order for bookings on booking detail page.
+- Sign in with Social media account or Google credentials.
+- Captcha verification when the user is signing up with email address.
+- Guidance when a user sign in for the first time.
+- Add more functionality to the portal. The proposed media sharing and editing function
 
+## Testing
 
-FUTURE
+### Validation of Code
 
-Add more content to home page.
-add contact me section.
-Date order for bookings on booking detail page.
+#### HTML
 
+![Screenshot of HTML validation of index page](doc/index-html-valid.webp)
 
+All the pages were tested at the [W3C Markup Validation Service](https://validator.w3.org/). The index page validation is presented above, all the other validations are linked below.
+
+- [Index page](doc/index-html-valid.PNG)
+- [Sign In Page](doc/sign-in-html-valid.PNG)
+- [Register](doc/register-html-valid.PNG)
+- [Booking Detail Page](doc/booking-detail-html-valid.PNG)
+- [Booking Successful Page](doc/booking-successful-html-valid.PNG)
+- [Edit Booking page](doc/edit-booking-html-valid.PNG)
+- [Booking delete page](doc/booking-delete-html-valid.PNG)
+- [Log Out Page](doc/log-out-html-valid.PNG)
 
 
 <!-- what would we like when visiting Studio Portal?

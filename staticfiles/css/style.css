@@ -1,9 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
-
 /* General Styles */
 body {
     min-height: 100vh;
@@ -32,9 +29,11 @@ h3 {
 
 hr {
     border: 1px solid white;
-  }
+}
 
-.top-buffer { margin-top: 114px;}
+.top-buffer { 
+    margin-top: 114px;
+}
 
 
 /* navbar */
@@ -123,15 +122,59 @@ footer {
     color:#fff;
   }
 
-  .footer {
+/* Footer   */
+
+/* .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-  }
+} */
+
+#make_booking {
+    margin-bottom: 60px;
+}
 
 /* Moves content up from behind footer */
   .clear { 
     clear: both; 
     height: 120px; 
 }
+
+#equipment-items {
+    background: url('../images/gallery/stone.webp') no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+#equipment-items div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 25px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*creates a grid around the equipment list*/
+    border: 2px solid #9EAFBD;
+
+}
+
+.alert {
+    background-color: green;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 620px) {
+    #make_booking {
+        width: 100%;
+        font-size: small;
+    }
+
+    .callToAction {
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+  }
+
