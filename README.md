@@ -257,14 +257,29 @@ Once the user is logged in, the navbar changes. "Register/Login" changes to "Log
 
 The sign-in page allows existing users to log in, enhancing the user experience by eliminating the need to enter their email each time they want to make a booking. It also enables users to view all their bookings in one place.
 
-
 ### Register
 
 ![Register page with fields for email, username, password and password again](doc/register.PNG)
 
 The Register page includes fields for the user to enter their email, username, password, and password confirmation. This ensures the user registers a contact method and avoids typos in the password.
 
+### Booking Detail Page
 
+![Booking detail page](doc/booking-detail.PNG)
+
+- This is the main page that the user is brought to after loging in
+- At the top of the page, the user is invited to make a new booking. There is text inputs for Artist name, date of booking and booking requirements.
+- The date opens a date box. The user is unable to enter a date that is in the past or is booked by any other artist.
+- A button allows the user to make their booking.
+- Below this area is a list of bookings already made by this user.
+
+### Booking Successful Page
+
+![Booking Success page](doc/booking-success.PNG)
+
+- After the user has made a booking, they are brought to this page.
+- A simple summary of their booking is displayed
+- A button allows the user to be directed back to the booking detail page.
 
 
 
@@ -288,8 +303,9 @@ The Register page includes fields for the user to enter their email, username, p
 
 FUTURE
 
-Add more content to home page
-add contact me section
+Add more content to home page.
+add contact me section.
+Date order for bookings on booking detail page.
 
 
 
