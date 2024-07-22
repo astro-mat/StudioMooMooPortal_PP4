@@ -319,10 +319,6 @@ The Register page includes fields for the user to enter their email, username, p
 - They can then choose to continue and be redirected to the index page.
 - Otherwise, they can click "Back to my bookings" or go anywhere using the navbar menu
 
-
-
-
-
 ### Footer
 
 ![footer](doc/footer.PNG)
@@ -330,7 +326,7 @@ The Register page includes fields for the user to enter their email, username, p
 - The footer section includes links to Studio Moo Moo's Facebook, Instagram and twitter pages.
 - The design colour and styling reflect those of the header
 - The links open to a new tab to allow easy navigation for the user. 
-- The footer is valuable to the user as it allows them to find and follow Mind Yoga on social media.
+- The footer is valuable to the user as it allows them to find and follow on social media.
 - There is also a small piece of stating the copyright restriction
 
 ### Password Reset Page

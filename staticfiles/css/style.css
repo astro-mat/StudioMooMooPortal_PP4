@@ -153,12 +153,6 @@ footer {
     background-color: green;
 }
 
-#logged-alert {
-    background-color: green;
-}
-
-/* Media Queries */
-
 @media only screen and (max-width: 620px) {
     #make_booking {
         width: 100%;
