@@ -77,8 +77,8 @@ hr {
     color: #fafafa;
 }
 
+/* hero image */
 .hero {
-
     background-size: cover;
     position: relative;
     height: 100%;
@@ -103,14 +103,6 @@ hr {
 .row {
     margin-left: 0px;
     margin-right: 0px;
-}
-
-.heroLogo {
-
-}
-
-.introText {
-
 }
 
 #gallery-photos {
@@ -158,6 +150,10 @@ footer {
 }
 
 .alert {
+    background-color: green;
+}
+
+#logged-alert {
     background-color: green;
 }
 

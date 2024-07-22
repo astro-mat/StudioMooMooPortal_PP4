@@ -208,6 +208,15 @@ Imagery was important as it signals to prospective clients what they can expect 
 
 ![Wireframe of index page](doc/wireframe-edit-404-page.webp)
 
+### Entity Relationship Diagram - ERD
+
+- Only one custom model was needed to make the website.
+- As there would only ever be one artist using the studio each day as a session would be expected to use an entire day, there was no need to specify a time as well as the date.
+- Artist name was included as a user may book studio for different projects
+- A requirements feild was deemed necessary to allow user to specify any specific needs or requirements for the session such as if a drum kit is need, how many musicians etc.
+
+![ERD of Booking Model](doc/erd-booking.PNG)
+
 ## Features
 
 ### Header
@@ -335,6 +344,12 @@ The Register page includes fields for the user to enter their email, username, p
 ![Password reset email sent](doc/password-reset-sent.PNG)
 
 - Once the request to reset has been submitted, the user is taken to this page and they are instructed to follow the instutions on the email when they recieve it.
+
+### Alerts
+
+![Alert](doc/alert.PNG)
+
+- When major changes are made by the user, a high contrast alert is visible just below the header
 
 
 ## Features to be Added

@@ -4,12 +4,12 @@
 {% block content %}
 
 <div class="hero container-fluid"> 
-  <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" style="width:100%">
+  <img class='img-fluid w-100' src="{% static 'images/stone.webp' %}" alt="" style="width:100%" alt="stone wall">
   <div class="container">
     <div class="heroLogo centerLogo" >
-      <img src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid   mx-auto d-block">
+      <img id="logo" src="{% static 'images/SMM_logotext_WHT_THK_TRANS.png' %}" class="img-fluid d-block" alt="Studio Moo Moo logo">
         <div class="callToAction">
-          <a id="make_booking" href="{% url 'booking:booking' %}" class="btn btn-light btn-lg">Click to make booking</a>
+          <a id="make_booking" href="{% url 'booking:booking' %}" class="btn btn-light btn-lg m-5 mx-auto">Click to make booking</a>
         </div>
     </div>
   </div>
