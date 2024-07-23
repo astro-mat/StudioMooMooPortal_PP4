@@ -266,7 +266,7 @@ Once the user is logged in, the navbar changes. "Register/Login" changes to "Log
 
 The sign-in page allows existing users to log in, enhancing the user experience by eliminating the need to enter their email each time they want to make a booking. It also enables users to view all their bookings in one place.
 
-### Register
+### Register Page
 
 ![Register page with fields for email, username, password and password again](doc/register.PNG)
 
@@ -366,18 +366,23 @@ Several features can be added in the future.
 
 #### HTML
 
-![Screenshot of HTML validation of index page](doc/index-html-valid.webp)
+![Screenshot of HTML validation of index page](doc/index-html-valid.PNG)
 
-All the pages were tested at the [W3C Markup Validation Service](https://validator.w3.org/). The index page validation is presented above, all the other validations are linked below.
+All the pages were tested at the [W3C Markup Validation Service](https://validator.w3.org/). The index page validation is above, all the other validations are linked below.
 
-- [Index page](doc/index-html-valid.PNG)
 - [Sign In Page](doc/sign-in-html-valid.PNG)
 - [Register](doc/register-html-valid.PNG)
+- [Booking Info Page](doc/booking-info-html-valid.PNG)
 - [Booking Detail Page](doc/booking-detail-html-valid.PNG)
 - [Booking Successful Page](doc/booking-successful-html-valid.PNG)
 - [Edit Booking page](doc/edit-booking-html-valid.PNG)
 - [Booking delete page](doc/booking-delete-html-valid.PNG)
 - [Log Out Page](doc/log-out-html-valid.PNG)
+- [Password Reset Page](doc/password-reset-html-valid.PNG)
+
+
+
+
 
 
 <!-- what would we like when visiting Studio Portal?
