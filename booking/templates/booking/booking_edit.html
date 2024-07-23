@@ -4,34 +4,31 @@
 
 {% block content %}
 
-<body class="container">
-    <main class="flex-shrink-0 main-bg">
+<div class="container">
+  <div class="flex-shrink-0 main-bg">
+    {% if user.is_authenticated %}
+    <p class="text-end m-3">You are logged in as: {{ user }}</p>
+    {% else %}
+    <p class="text-end m-3">You are not logged in</p>
+    {% endif %}
+  </div>
+  <div>
+    <h1>Edit a Booking</h1>
+    <div class="col-md-4 mb-4 mt-3">
+      <div>
         {% if user.is_authenticated %}
-        <p class="text-end m-3">You are logged in as: {{ user }}</p>
+        <form id="bookingForm" method="post" style="margin-top: 1.3em;">
+          {{ booking_form | crispy }}
+          {% csrf_token %}
+          <button id="BookingButton" type="submit" class="btn btn-lg btn-light">Save Booking</button>
+          <button id="CancelButton" type="submit" class="btn btn-lg btn-light">Cancel Editing</button>
+        </form>
         {% else %}
-        <p class="text-end m-3">You are not logged in</p>
+        <p>Log in to make a booking</p>
         {% endif %}
-    <div>
-        <h1>Edit a Booking</h1>
-        <div class="col-md-4 mb-4 mt-3">
-          <div>
-            {% if user.is_authenticated %}
-            <form id="bookingForm" method="post"
-              style="margin-top: 1.3em;">
-              {{ booking_form | crispy }}
-              {% csrf_token %}
-              <button id="BookingButton" type="submit"
-                class="btn btn-lg btn-light">Save Booking</button>
-              <button id="CancelButton" type="submit"
-                class="btn btn-lg btn-light">Cancel Editing</button>
-            </form>
-            {% else %}
-            <p>Log in to make a booking</p>
-            {% endif %}
-          </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-</body>
-</html>
+</div>
 {% endblock %}

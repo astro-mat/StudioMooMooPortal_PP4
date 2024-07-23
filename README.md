@@ -372,7 +372,7 @@ All the pages were tested at the [W3C Markup Validation Service](https://validat
 
 - [Sign In Page](doc/sign-in-html-valid.PNG)
 - [Register](doc/register-html-valid.PNG)
-- [Booking Info Page](doc/booking-info-html-valid.PNG)
+- This page showed 4 errors. These seem to originated from AllAuth injected html and as such are not available for me to edit
 - [Booking Detail Page](doc/booking-detail-html-valid.PNG)
 - [Booking Successful Page](doc/booking-successful-html-valid.PNG)
 - [Edit Booking page](doc/edit-booking-html-valid.PNG)

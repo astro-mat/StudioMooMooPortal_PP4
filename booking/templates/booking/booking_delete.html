@@ -6,7 +6,7 @@
 
 
 
-<body container mx-5 my-5>
+<div class="container mx-5 my-5">
   <div class="row">
     <div class="col-sm">
       <main class="flex-shrink-0 main-bg">
@@ -25,7 +25,7 @@
                 <h3> Are you sure you want to delete the following booking ?</h3>
                 <h4>{{ booking.artist_name }} -- {{ booking.date }}</h4>
                 <button id="BookingButton" type="submit" class="btn btn-lg btn-light">Delete Booking</button>
-                <a href="{% url 'booking:delete_booking' booking.pk%}" </a>
+                <a href="{% url 'booking:delete_booking' booking.pk%}"></a>
                   <a href="{% url 'booking:my_bookings'%}" class="btn btn-lg btn-light">Cancel</a>
 
               </form>
@@ -38,7 +38,5 @@
       </main>
     </div>
   </div>
-</body>
-
-</html>
+</div>
 {% endblock %}
