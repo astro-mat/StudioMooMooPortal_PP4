@@ -414,7 +414,21 @@ All Python files have been validated using the [CI Python Linter](https://pep8ci
 
 ![Python validation of apps.py in booking](doc/pep8-booking-apps.PNG)
 
+### Lighthouse
 
+Tests in Lighthouse were performed for both desktop and mobile.
+
+#### Desktop
+
+![Lighthouse test for desktop](doc/lighthouse-desktop.PNG)
+
+The test for desktop resulted in scores all over 90.
+
+#### Mobile
+
+![Lighthouse test for mobile](doc/lighthouse-mobile.PNG)
+
+The test for mobile resulted in scores all over 90. The performance rating could be further improved by adopting responsive images in order to reduce mobile load time.
 
 
 
