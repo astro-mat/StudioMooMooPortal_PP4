@@ -583,26 +583,27 @@ Date Validation | If the user attempts to make a booking on a date that there is
 
 #### Password Reset page
 
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
+| All fields required | An error message appears when the user tries to reset password with field empty | Leave password field empty try to reset password | An error message appeared when a field was left empty | Pass |
+| "Rest my Password" Button | 
+
+#### Password reset done page
+
+| Feature being tested | Expected Outcome | Testing Performed | Actual Outcome | Result (Pass or fail) |
+| -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
+| Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
+| Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
+| Reset Email is sent and recieved | User recieves an email with further instructions | Click on "Forgot Password" link from Log in page, enter email, click reset password, check if email is recieved | Email is recieved with instructions to reset | Pass
 
 
 
 
-<!-- what would we like when visiting Studio Portal?
-What kind of features would it provide its users?
-1) The ability to create, Read, update and delete a booking for a recording session
-2) the ability to stream and download rough mixes from recording sessions
-3) signup process to be easy and frictionless
 
-Problem statement: How do I develop a portal application that delivers this functionality to a user?
 
-A user can view available time slots for the studio. 
-A normal user is logged in they can access the portal content including: 
-  1) Create, Read, Update and Delete bookings
-  2)  View booking history
-  3)  Stream/Download recordings made at studio
-  4)  Manage their account settings
 
-An Admin user can 
-  1) Create, Read, Update and Delete bookings
-  2) Create, read, Update and delete recordings -->
+
+  
 
