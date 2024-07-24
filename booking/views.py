@@ -11,8 +11,10 @@ from .forms import *
 def home(request):
     return render(request, "index.html")
 
+
 def booking(request):
     return render(request, "booking/booking.html")
+
 
 def my_bookings(request):
     bookings = Booking.objects.filter(user=request.user)
@@ -24,16 +26,17 @@ def my_bookings(request):
             booking.user = request.user
             booking.save()
             print('booking id', booking.id)
-            return redirect(reverse('booking:success_booking', args=[booking.id]))
+            return redirect(reverse('booking:success_booking',
+                            args=[booking.id]))
 
     return render(
-        request, 
+        request,
         "booking/booking_list.html",
         {
-            'booking_form' : booking_form,
+            'booking_form': booking_form,
             'bookings': bookings,
         },
-    )
+        )
 
 
 def edit_booking(request, booking_id):
@@ -52,53 +55,51 @@ def edit_booking(request, booking_id):
             messages.add_message(request, messages.SUCCESS, 'Booking Updated!')
             return redirect(reverse('booking:my_bookings'))
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating booking!')
+            messages.add_message(request, messages.ERROR,
+                                 'Error updating booking!')
     return render(
-        request, 
+        request,
         "booking/booking_edit.html",
         {
-            'booking_form' : booking_form,
+            'booking_form': booking_form,
         },
     )
-        
+
 
 def delete_booking(request, booking_id):
     """
     view to delete booking
     """
     booking = get_object_or_404(Booking, pk=booking_id)
-    
+
     if request.method == 'POST':
         booking.delete()
         messages.add_message(request, messages.SUCCESS, 'Booking Deleted!')
         return redirect(reverse('booking:my_bookings'))
     else:
         return render(
-        request, 
-        "booking/booking_delete.html",
-        {
-            'booking' : booking,
-        },
-    )
+            request,
+            "booking/booking_delete.html",
+            {
+                'booking': booking,
+            },
+            )
 
-    
+
 def success_booking(request, booking_id):
     """
     Success page after making a booking
     """
     booking = get_object_or_404(Booking, pk=booking_id)
-    
+
     if request.method == 'POST':
         messages.add_message(request, messages.SUCCESS, 'Booking created!')
         return redirect(reverse('booking:success_booking', args=[booking.id]))
     else:
         return render(
-        request, 
-        "booking/booking_success.html",
-        {
-            'booking' : booking,
-        },
-    )
-
-
-
+            request,
+            "booking/booking_success.html",
+            {
+                'booking': booking,
+            },
+            )

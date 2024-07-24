@@ -380,6 +380,28 @@ All the pages were tested at the [W3C Markup Validation Service](https://validat
 - [Log Out Page](doc/log-out-html-valid.PNG)
 - [Password Reset Page](doc/password-reset-html-valid.PNG)
 
+#### CSS
+
+![Screenshot of CSS validation](doc/css-valid.PNG)
+
+The CSS code was tested at [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). The process completed without errors but generated one warning: "Imported style sheets are not checked in direct input and file upload modes." This warning pertains to fonts imported from Google Fonts.
+
+#### Python
+
+All Python files have been validated using the [CI Python Linter](https://pep8ci.herokuapp.com/) to ensure they meet PEP8 standards. The validation process completed without any errors.
+
+**Booking - views.py**
+
+![Python validation of views.py in bookings](doc/pep8-booking-views.PNG)
+
+**Booking - models.py**
+
+![Python validation of models.py in booking](doc/pep8-booking-models.PNG)
+
+**Booking - admin.py**
+
+![Python validation of admin.py in booking](doc/pep8-news-admin.PNG)
+
 
 
 
