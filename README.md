@@ -243,7 +243,7 @@ The design was very much dictated by the original website. It will use predomina
 
 ### Color Scheme
 
-The colour scheme is chosen again, to relate to the existing website. It is felt that the main dark elements convey a modern, professional style to prospective clients.
+The colour scheme is chosen again, to relate to the existing website. It is felt that the main dark elements convey a modern, professional style to prospective.
 
 ### Typography
 
