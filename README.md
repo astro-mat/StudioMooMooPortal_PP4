@@ -400,7 +400,19 @@ All Python files have been validated using the [CI Python Linter](https://pep8ci
 
 **Booking - admin.py**
 
-![Python validation of admin.py in booking](doc/pep8-news-admin.PNG)
+![Python validation of admin.py in booking](doc/pep8-booking-admin.PNG)
+
+**Booking - forms.py**
+
+![Python validation of forms.py in booking](doc/pep8-booking-forms.PNG)
+
+**Booking - urls.py**
+
+![Python validation of urls.py in booking](doc/pep8-booking-urls.PNG)
+
+**Booking - apps.py**
+
+![Python validation of apps.py in booking](doc/pep8-booking-apps.PNG)
 
 
 

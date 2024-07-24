@@ -4,11 +4,11 @@ from django.core.exceptions import ValidationError
 from datetime import datetime, date
 from .models import Booking
 
-        
+
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ('artist_name','date','booking_requirements')
+        fields = ('artist_name', 'date', 'booking_requirements')
         widgets = {
             'artist_name': forms.Textarea(attrs={'cols': 60, 'rows': 1}),
             'date': DateInput(attrs={'type': 'date'}),
@@ -25,7 +25,8 @@ class BookingForm(forms.ModelForm):
         if date < date.today():
             raise ValidationError("Please select a date in the future.")
 
-        existing_bookings = Booking.objects.filter(date=date).exclude(id=self.instance.id)
+        existing_bookings = Booking.objects.filter(
+            date=date).exclude(id=self.instance.id)
         print('existing_bookings', existing_bookings)
 
         if existing_bookings:
