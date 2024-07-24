@@ -687,13 +687,13 @@ Date Validation | If the user attempts to make a booking on a date that there is
 
 ### Bugs
 
-During the testing several bugs have been discovered. No bugs were left unfixed.
+During the testing several bugs have been discovered.
 
-When the html validation of all pages were completed, a number of errors were present
+When the html validation of all pages were completed, a number of errors were present but were all fixed.
 
 Another validation error was when assessing for accessibility with webAID. two of the pages were unable to load in the tool and as such could not be assessed. However, since all the other pages flew through the tests, It can be assumed safely that these pages would pass as they are very similar in style
 
-When the PEP8 validation of the Python code was made, 39 errors occurred. Most of them were one of following:
+When the PEP8 validation of the Python code was made, 48 errors occurred. Most of them were one of following:
 - trailing whitespace
 - line too long
 - blank line contains whitespace
