@@ -1,19 +1,106 @@
 # Studio Moo Moo Client PortaL
 
-![AmIResponsive image of Studio Moo Moo Client Portal](doc/amiresponsive.webp)
+![AmIResponsive image of Studio Moo Moo Client Portal](doc/amiresponsive.PNG)
 
 ## Introduction
 
 This project is to build a front-end client portal for an existing recording studio website (www.studiomoomoo.ie) where you, as a user can book a recording session and access other features.
 
 ## Table of Contents
-<!--- TO BE GENERATED -->
+- [Studio Moo Moo Client PortaL](#studio-moo-moo-client-portal)
+  * [Introduction](#introduction)
+  * [Table of Contents](#table-of-contents)
+  * [User Experience](#user-experience)
+    + [User Goals](#user-goals)
+    + [Site Owner Goals](#site-owner-goals)
+    + [User Stories](#user-stories)
+      - [Epic 1 - Initial project setup](#epic-1---initial-project-setup)
+      - [Epic 2 - User Account Creation](#epic-2---user-account-creation)
+      - [Epic 3 - User Login](#epic-3---user-login)
+      - [Epic 4 - Studio booking system](#epic-4---studio-booking-system)
+      - [Epic 6 - Enhancing Website Aesthetics](#epic-6---enhancing-website-aesthetics)
+  * [Design](#design)
+    + [Color Scheme](#color-scheme)
+    + [Typography](#typography)
+    + [Imagery](#imagery)
+    + [Wireframes](#wireframes)
+      - [Index page](#index-page)
+      - [Booking Info Page](#booking-info-page)
+      - [Sign-In Page](#sign-in-page)
+      - [Sign-Out Page](#sign-out-page)
+      - [Make Booking Page](#make-booking-page)
+      - [Edit Booking Page](#edit-booking-page)
+      - [Manage Booking Page](#manage-booking-page)
+      - [Booking Success Page](#booking-success-page)
+      - [500 Page](#500-page)
+      - [404 Page](#404-page)
+    + [Entity Relationship Diagram - ERD](#entity-relationship-diagram---erd)
+  * [Features](#features)
+    + [Header](#header)
+      - [Navigation bar](#navigation-bar)
+    + [Index page](#index-page-1)
+      - [Hero image](#hero-image)
+      - [About Us Section](#about-us-section)
+      - [Gallery Section](#gallery-section)
+    + [Booking Info Page](#booking-info-page-1)
+    + [Sign In Page](#sign-in-page)
+    + [Register Page](#register-page)
+    + [Booking Detail Page](#booking-detail-page)
+    + [Booking Successful Page](#booking-successful-page)
+    + [Edit Booking page](#edit-booking-page)
+    + [Booking delete page](#booking-delete-page)
+    + [Log Out Page](#log-out-page)
+    + [Footer](#footer)
+    + [Password Reset Page](#password-reset-page)
+    + [Alerts](#alerts)
+  * [Features to be Added](#features-to-be-added)
+  * [Testing](#testing)
+    + [Validation of Code](#validation-of-code)
+      - [HTML](#html)
+      - [CSS](#css)
+      - [Python](#python)
+    + [Lighthouse](#lighthouse)
+      - [Desktop](#desktop)
+      - [Mobile](#mobile)
+    + [Wave Webaim - accessibility testing](#wave-webaim---accessibility-testing)
+      - [Index page](#index-page-2)
+      - [Sign In](#sign-in)
+      - [Register page](#register-page)
+      - [Booking Detail page](#booking-detail-page)
+      - [Booking Successful page](#booking-successful-page)
+      - [Edit Booking page](#edit-booking-page-1)
+      - [Booking delete page](#booking-delete-page-1)
+      - [Log Out page](#log-out-page)
+      - [Password Reset page](#password-reset-page)
+    + [Contrast Grid](#contrast-grid)
+    + [Manual Testing](#manual-testing)
+      - [Navigation bar](#navigation-bar-1)
+      - [Index page](#index-page-3)
+      - [Log In Page](#log-in-page)
+    + [Register page](#register-page-1)
+      - [Booking Detail page](#booking-detail-page-1)
+      - [Booking Successful page](#booking-successful-page-1)
+      - [Edit Booking page](#edit-booking-page-2)
+      - [Booking delete page](#booking-delete-page-2)
+      - [Log Out page](#log-out-page-1)
+      - [Password Reset page](#password-reset-page-1)
+      - [Password reset done page](#password-reset-done-page)
+    + [Bugs](#bugs)
+  * [Technologies Used](#technologies-used)
+  * [Deployment](#deployment)
+    + [Fork repository in GitHub](#fork-repository-in-github)
+    + [Clone repository in GitHub](#clone-repository-in-github)
+    + [Deployment to Heroku](#deployment-to-heroku)
+  * [Credits](#credits)
+    + [Libraries Used](#libraries-used)
+    + [Used resources](#used-resources)
+    + [Existing projects used for inspiration](#existing-projects-used-for-inspiration)
+    + [Tutorials and code snippets](#tutorials-and-code-snippets)
+  * [Acknowledgements](#acknowledgements)
 
 ## User Experience
 
 ### User Goals
-
-One of the user goals is to be able to book . They should have a smooth user experience with the 
 
 The main user goal would be to be able to book sessions in the studio. Additionally, the user should have a seamless experience with full CRUD (Create, Read, Update, and Delete) functionality for managing their bookings. Further aims include allowing the user to listen to and download their projects that have been recorded in the studio such as rough mixes and stems and to view details about past bookings.
 
@@ -71,7 +158,7 @@ The  registration form includes fields for necessary information such as email, 
 - Acceptance Criteria 2  
 The registration form has input validation.
 - Acceptance Criteria 3  
-Once the user has registered, they recieve confirmation that they have successfully registered.
+Once the user has registered, they receive confirmation that they have successfully registered.
 
 #### Epic 3 - User Login
 
@@ -84,18 +171,18 @@ As a registered user when I click log in and enter in the relevant log in criter
 - Acceptance Criteria 2  
 If I am not a registered user and I try to log in I will see an error message of invalid credentials and will be prompted to register
 - Acceptance Criteria 3  
-Once the user is logged in, they recieve confirmation that they have.
+Once the user is logged in, they receive confirmation that they have.
 
-**User Story - Reset forgotton password**
+**User Story - Reset forgotten password**
 
 As a registered user, I can securely obtain Forgotten Password so that I can gain access if password is forgotten
 
-There is a clear option visable to click if you have forgotten your password
+There is a clear option visible to click if you have forgotten your password
 
 - Acceptance Criteria 1  
-There is a clear option visable to click if you have forgotten your password
+There is a clear option visible to click if you have forgotten your password
 - Acceptance Criteria 2  
-Once nessesary information is given by user, there is a clear procedure to follow that results in acess being given 
+Once necessary information is given by user, there is a clear procedure to follow that results in access being given 
 
 #### Epic 4 - Studio booking system
 
@@ -130,11 +217,11 @@ The user can cancel a booking they have made
 - Acceptance Criteria 2  
 There is a confirmation of the cancellation
 
-#### Epic 6 - Enhancing Website Asthetics
+#### Epic 6 - Enhancing Website Aesthetics
 
 **User Story - Design is consistent with existing site**
 
-As a user, all areas of site should be consistant in appearance so that I have a great user experience.
+As a user, all areas of site should be consistent in appearance so that I have a great user experience.
 
 - Acceptance Criteria 1  
 When navigating between portal and existing website, they should look similar in design
@@ -146,7 +233,7 @@ As a site user, I can easily navigate and view content using wide range of devic
 - Acceptance Criteria 1  
 The layout automatically adjusts based on screen size and orientation
 - Acceptance Criteria 2  
-All elements such as text, images, buttons etc are easily viewed and visable on a range of devices
+All elements such as text, images, buttons etc are easily viewed and visible on a range of devices
 - Acceptance Criteria 3  
 All navigation elements are optimised for touch devices
 
@@ -160,7 +247,7 @@ The colour scheme is chosen again, to relate to the existing website. It is felt
 
 ### Typography
 
-The typography was chosen to fit in with the design style establised by the colour choices earlier while still being easy to read. Capitalisation was employed for titles to re-enforce this design choice.
+The typography was chosen to fit in with the design style established by the colour choices earlier while still being easy to read. Capitalisation was employed for titles to re-enforce this design choice.
 
 ### Imagery
 
@@ -213,7 +300,7 @@ Imagery was important as it signals to prospective clients what they can expect 
 - Only one custom model was needed to make the website.
 - As there would only ever be one artist using the studio each day as a session would be expected to use an entire day, there was no need to specify a time as well as the date.
 - Artist name was included as a user may book studio for different projects
-- A requirements feild was deemed necessary to allow user to specify any specific needs or requirements for the session such as if a drum kit is need, how many musicians etc.
+- A requirements field was deemed necessary to allow user to specify any specific needs or requirements for the session such as if a drum kit is need, how many musicians etc.
 
 ![ERD of Booking Model](doc/erd-booking.PNG)
 
@@ -276,7 +363,7 @@ The Register page includes fields for the user to enter their email, username, p
 
 ![Booking detail page](doc/booking-detail.PNG)
 
-- This is the main page that the user is brought to after loging in
+- This is the main page that the user is brought to after logging in
 - At the top of the page, the user is invited to make a new booking. There is text inputs for Artist name, date of booking and booking requirements.
 - The date opens a date box. The user is unable to enter a date that is in the past or is booked by any other artist.
 - A button allows the user to make their booking.
@@ -308,7 +395,7 @@ The Register page includes fields for the user to enter their email, username, p
 - When a user clicks on "Delete" button on booking detail page, they are bought to this page.
 - The booking details are displayed and the user is asked if they are sure they want to delete or cancel the deleting process.
 - If they decide to delete, they are bought back to the booking detail page with confirmation that the booking was deleted and the table has updated.
-- If they change their mind and cancel, tehy are also brought back to the booking detail page with no changes having been made.
+- If they change their mind and cancel, they are also brought back to the booking detail page with no changes having been made.
 
 ### Log Out Page
 
@@ -333,13 +420,13 @@ The Register page includes fields for the user to enter their email, username, p
 
 ![password Reset Page](doc/password-reset.PNG)
 
-- In the event of a user forgetting their password and being unable to login, on the login page, there is a link labled "forgot password?"
+- In the event of a user forgetting their password and being unable to login, on the login page, there is a link labeled "forgot password?"
 - On clicking this link, they are brought to this page.
-- Here they are prompted to enter their email. once submited, an email is sent with instructions on how to change password.
+- Here they are prompted to enter their email. once submitted, an email is sent with instructions on how to change password.
 
 ![Password reset email sent](doc/password-reset-sent.PNG)
 
-- Once the request to reset has been submitted, the user is taken to this page and they are instructed to follow the instutions on the email when they recieve it.
+- Once the request to reset has been submitted, the user is taken to this page and they are instructed to follow the institutions on the email when they receive it.
 
 ### Alerts
 
@@ -432,7 +519,7 @@ The test for mobile resulted in scores all over 90. The performance rating could
 
 ### Wave Webaim - accessibility testing
 
-
+The accessibility test at [Wave Webaim](https://wave.webaim.org/) resulted without errors and contrast errors on all pages.
 
 #### Index page
 
@@ -442,7 +529,7 @@ The test for mobile resulted in scores all over 90. The performance rating could
 
 ![Wave webaim test of Sign In page](doc/wave-webaim-sign-in.PNG)
 
-#### Login page
+#### Register page
 
 ![Wave webaim test of Login page](doc/wave-webaim-Register.PNG)
 
@@ -456,7 +543,7 @@ The test for mobile resulted in scores all over 90. The performance rating could
 
 #### Edit Booking page
 
-![Wave webaim test of Edit Booking page](doc/wave-webaim-edit-booking.PNG)
+This page would not load with webAID. See Bugs section
 
 #### Booking delete page
 
@@ -464,7 +551,7 @@ The test for mobile resulted in scores all over 90. The performance rating could
 
 #### Log Out page
 
-![Wave webaim test of Log Out page](doc/wave-webaim-log-out.PNG)
+This page would not load with webAID. See Bugs section
 
 #### Password Reset page
 
@@ -472,9 +559,9 @@ The test for mobile resulted in scores all over 90. The performance rating could
 
 ### Contrast Grid
 
-The [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23CACACA%2C%20%20Background%20color%0D%0A%23353535%2C%20Text%0D%0A%23411919%2C%20Cancel%20btn%20-%20background%0D%0A%23FFFFFF%2C%20Cancel%2Fconfirm%2Fdelete%20btn%20-%20text%0D%0A%23193A18%2C%20Confirm%20btn%20-%20background%0D%0A%238d3838%2C%20Delete%20btn%20-%20background%0D%0A%23000000%2C%20Footer%20icons&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) resulted in only AAA results for the combination used on the webpage. The main combination throughout the page is #CACACA and #353535 which has a value of 7.4 (where the limit for AAA is 7+).
+The [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23CACACA%2C%20%20Background%20color%0D%0A%23353535%2C%20Text%0D%0A%23411919%2C%20Cancel%20btn%20-%20background%0D%0A%23FFFFFF%2C%20Cancel%2Fconfirm%2Fdelete%20btn%20-%20text%0D%0A%23193A18%2C%20Confirm%20btn%20-%20background%0D%0A%238d3838%2C%20Delete%20btn%20-%20background%0D%0A%23000000%2C%20Footer%20icons&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) resulted in only AAA results for the combination used on the webpage. The main combination throughout the page is #000000 and #FFFFFF which has a value of 7+ which is the best result available.
 
-![Contrast Grid of the webpage](doc/contrast-grid.webp)
+![Contrast Grid of the webpage](doc/contrast-grid.PNG)
 
 ### Manual Testing
 
@@ -515,7 +602,7 @@ Every page at the website has been manually tested. It is done in Google Chrome 
 | Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
 | All fields required | An error message appears when the user tries to sign in but leaves one field empty | Leave one field empty one by one and try to Sign In | An error message appeared when a field was left empty | Pass |
-| Remember me button | when selected when loging in, user details are remembered at next login | select when loging in, log out and return | User details were remembered on returning to the page | Pass |
+| Remember me button | when selected when logging in, user details are remembered at next login | select when logging in, log out and return | User details were remembered on returning to the page | Pass |
 | Sign In button | When the "Sign In" button is pressed, the user gets signed in | Click at "Sign In" button | The user gets signed in | Pass |
 | Redirected | When the "Sign In" button is pressed, the user gets redirected to the booking detail page | Visit Register page, click Sign in, press "Sign In" button | The user got redirected to Booking Detail page | Pass |
 | Sign Up button | When the "Sign Up" button is pressed, the user redirected to Register page | Click at "Sign Up" button | The user gets redirected to Register/Login page | Pass |
@@ -548,7 +635,7 @@ Date Validation | If the user attempts to make a booking on a date that there is
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
 | Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
-| Correct Information displayed | The page should display the details of the booking that the user just made | Visit "Booking Detail" page, click "Make A booking" | Booking Successfull Page displays the infomation of the booking just made | Pass
+| Correct Information displayed | The page should display the details of the booking that the user just made | Visit "Booking Detail" page, click "Make A booking" | Booking Successful Page displays the information of the booking just made | Pass
 | "Back to bookings" Button | When the "Back to Bookings" button is pressed, the user gets redirected to "Booking Detail" page | Click at "Back to bookings" button | The user gets redirected to "Booking Detail" page | Pass |
 
 #### Edit Booking page
@@ -557,7 +644,7 @@ Date Validation | If the user attempts to make a booking on a date that there is
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
 | Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
-| Correct Information displayed | The page should display the details of the booking that the user just made | Visit "Booking Detail" page, click "Edit" |  Edit Booking Page displays the infomation of the booking to be edited | Pass
+| Correct Information displayed | The page should display the details of the booking that the user just made | Visit "Booking Detail" page, click "Edit" |  Edit Booking Page displays the information of the booking to be edited | Pass
 | Edit Booking | Any field can be edited | Visit Booking detail Page, select a booking to edit, click "Edit booking", Make changes to every field | All Fields are able to be edited | Pass
 | "Save Booking" Button | After making a change, Clicking on "Save booking" button redirects user to Booking detail page and changes are displayed | Visit Edit Booking page, make a change to booking, click "Save Booking" | User is redirected to Booking detail page and changes are displayed | Pass
 
@@ -567,7 +654,7 @@ Date Validation | If the user attempts to make a booking on a date that there is
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
 | Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
-| Correct Information displayed | The page should display the details of the booking that the user wants to delete | Visit "Booking Detail" page, click "Delete" |  Delete Booking Page displays the infomation of the booking to be Deleted | Pass
+| Correct Information displayed | The page should display the details of the booking that the user wants to delete | Visit "Booking Detail" page, click "Delete" |  Delete Booking Page displays the information of the booking to be Deleted | Pass
 | "Delete Booking" Button | User is redirected back to Booking detail page, desired booking has been deleted | From delete booking page, click "Delete" | User is redirected back to Booking Detail page and the booking has been deleted | Pass 
 | "Cancel" Button | User is redirected back to Booking detail page, desired booking has not been deleted | From delete booking page, click "Cancel" | User is redirected back to Booking Detail page and the booking has not been deleted | Pass 
 
@@ -596,7 +683,118 @@ Date Validation | If the user attempts to make a booking on a date that there is
 | -------------------- | ---------------- | ----------------- | -------------- | --------------------- |
 | Responsive design | The page changes so the content fit at the smallest to the largest screens without scrolling sideways | In DevTools, select the smallest device and make it larger step by step | The page was responsive and changed depending on screen size | Pass |
 | Text readability | Enough margins and padding to make text readable | Read all text blocks at all different Bootstrap breakpoints | The text is readable at all breakpoints | Pass |
-| Reset Email is sent and recieved | User recieves an email with further instructions | Click on "Forgot Password" link from Log in page, enter email, click reset password, check if email is recieved | Email is recieved with instructions to reset | Pass
+| Reset Email is sent and received | User receives an email with further instructions | Click on "Forgot Password" link from Log in page, enter email, click reset password, check if email is received | Email is received with instructions to reset | Pass
+
+### Bugs
+
+During the testing several bugs have been discovered. No bugs were left unfixed.
+
+When the html validation of all pages were completed, a number of errors were present
+
+Another validation error was when assessing for accessibility with webAID. two of the pages were unable to load in the tool and as such could not be assessed. However, since all the other pages flew through the tests, It can be assumed safely that these pages would pass as they are very similar in style
+
+When the PEP8 validation of the Python code was made, 39 errors occurred. Most of them were one of following:
+- trailing whitespace
+- line too long
+- blank line contains whitespace
+
+The first lighthouse tests performed resulted in a 82 performance. This was improved by resizeng the images to its biggest dimension being 800px. Performance could be improved further by introducing responsive images
+
+## Technologies Used
+
+- [Code Institutes Gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template) - 
+- [GitHub](https://github.com/)
+- [Gitpod](https://www.gitpod.io/) 
+- [Heroku](https://www.heroku.com/)
+- [Balsamiq](https://balsamiq.com/)
+- [Google Spreadsheet](https://docs.google.com/spreadsheets/)
+
+The code languages used in this project are HTML, CSS, JavaScript and Python. The main frameworks used are Django and Bootstrap.
+
+## Deployment
+
+### Fork repository in GitHub
+
+- Open the chosen repository in GitHub 
+- Click on the "Fork" button
+- A copy of the repository is now located in your own account
+
+### Clone repository in GitHub
+
+- Open the chosen repository in GitHub 
+- Click on "Code" button
+- Copy the URL
+- Open your command line interface
+- Navigate to the directory you want to clone the repository to
+- Use 'git clone', followed by the earlier copied URL
+- Move into the newly created directory
+- Install the dependencies using 'pip install -r requirements.txt'
+- Run the application with 'python manage.py runserver'
+
+### Deployment to Heroku
+
+- Open Heroku and log in
+- Click on "New" and choose the option "Create new app"
+- Choose an app name and which region (Europe or United States) you are located in
+- Press "Create app"
+- When the app is created, choose the Settings tab
+- Under "Config Vars", press "Reveal Config Vars"
+- In keys, write DATABASE_URL
+- In value, insert the url to the database
+- Press "Add"
+- Under "Buildpacks", press "Add buildpack"
+- Choose "Python", press "Add buildpack"
+- Change tab to the Deploy tab
+- Choose deploy method - GitHub
+- Search for the correct repository name at your connected GitHub account
+- Press "Connect"
+- Under "Manual deploy", choose which branch to deploy and press "Deploy Branch"
+
+Link to deployed website: <https://frisa-booking-e7f1e4a00ea9.herokuapp.com/>
+
+## Credits
+
+### Libraries Used
+
+- django-allauth
+- django-summernote
+- gunicorn
+- whitenoise
+
+### Used resources
+
+- [Font Awesome](https://fontawesome.com/) - For all icons on the website
+- [W3Schools](https://www.w3schools.com/howto/howto_js_read_more.asp) - Used to troubleshoot/questions about code
+- [django](https://docs.djangoproject.com/) - For all information referred to about Django
+
+### Existing projects used for inspiration
+
+- https://github.com/brodsa/findMEreadME
+- https://github.com/LauraMayock/The-happy-reader
+- https://github.com/KSDunne/statement_beauty/blob/main/makeover/forms.py
+- https://github.com/FridaWikell/frisa-booking/blob/main/templates/index.html
+- https://github.com/KSDunne/statement_beauty/blob/main/makeover/forms.py
+- https://github.com/Thomas-Tomo/woodland-whispers-retreat/blob/main/cabin_bookings/models.py
+
+### Tutorials and code snippets
+
+- https://stackoverflow.com/questions/31574775/move-a-bootstrap-input-element-further-down-the-page - Code to move down element in bootstrap
+- https://simpleisbetterthancomplex.com/tutorial/2019/01/03/how-to-use-date-picker-with-django.html
+- https://mdbootstrap.com/docs/standard/navigation/footer/
+- https://stackoverflow.com/questions/13881548/sticky-footer-hiding-content
+
+## Acknowledgements
+
+Many thanks to the following people for all their help and support
+
+- Laura Mayock - Cohort Facilitator
+- Antonio Rodriguez - Mentor
+- Indre Vilickaite - Fellow Student
+- Patrick Hladun - Fellow Student
+
+And all the Tutors that assisted me
+
+Holly, Roo, John, Roman, Sean, Oisin, Mark, Sarah, Thomas and Alan
 
 
 
